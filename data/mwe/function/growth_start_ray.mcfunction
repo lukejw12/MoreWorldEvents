@@ -1,0 +1,9 @@
+tag @e remove growth_ray
+tag @s add growth_ray
+scoreboard players set #hit growth_ray 0
+scoreboard players set #distance growth_ray 0
+playsound minecraft:entity.blaze.shoot master @a[distance=..10] ~ ~ ~ 100 2 1
+function mwe:growth_ray
+kill @e[type=marker,tag=reflect]
+
+tag @s remove growth_ray

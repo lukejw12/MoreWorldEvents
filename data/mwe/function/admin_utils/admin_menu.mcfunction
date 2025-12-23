@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"Welcome to the Admin Menu!","color":"aqua"}]
+tellraw @s [{"text":"Choose an option below to continue.","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/option_event_selector"},"text":"- Event Selector","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/custom_items/custom_items_menu"},"text":"- Custom Items","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/gameplay_settings"},"text":"- Gameplay Settings","color":"gold"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/admin_menu_page2"},"color":"green","text":"Next ->"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

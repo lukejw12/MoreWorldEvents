@@ -1,0 +1,4 @@
+particle minecraft:smoke ~ ~ ~ 5 0 5 0 3000 force
+kill @e[type=item,nbt={Item:{id:"minecraft:beacon",count:1}},sort=nearest]
+summon item ~ ~1 ~ {Motion:[0.0,0.2,0.0],Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:entity_data":{id:"minecraft:marker",Tags:["forcefield_placed"]},"minecraft:custom_data":{forcefield_spawn:1b},"minecraft:item_model":"minecraft:beacon","minecraft:item_name":'{"color":"light_purple","italic":false,"text":"Forcefield"}',"minecraft:rarity":"epic","minecraft:lore":['{"color":"gray","italic":false,"text":"Place down to grant a 30"}','{"color":"gray","italic":false,"text":"block radius of meteor protection!"}'],"minecraft:enchantment_glint_override":true}}}
+kill @s

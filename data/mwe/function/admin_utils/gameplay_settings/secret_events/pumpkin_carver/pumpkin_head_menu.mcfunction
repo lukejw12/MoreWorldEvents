@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"Pumpkin Head","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/secret_events/pumpkin_carver/enable"},"text":"- Enable (default)","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/secret_events/pumpkin_carver/disable"},"text":"- Disable","color":"gold"}]
+tellraw @s [{"text":"","color":"dark_gray"}]
+tellraw @s [{"text":"","color":"dark_gray"}]
+tellraw @s [{"text":"","color":"dark_gray"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/secret_events/secret_events_menu"},"color":"green","text":"<- Back"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

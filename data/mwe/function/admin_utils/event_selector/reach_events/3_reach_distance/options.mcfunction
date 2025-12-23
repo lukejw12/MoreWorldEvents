@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"3x Reach Distance","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/reach_events/3_reach_distance/trigger_event"},"text":"Trigger Event","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/reach_events/3_reach_distance/disable"},"text":"Disable Event","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/reach_events/3_reach_distance/enable"},"text":"Enable Event (Default)","color":"gold"}]
+tellraw @s [{"text":"","color":"dark_gray"}]
+tellraw @s [{"text":"(Still In Development)","color":"dark_gray"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/event_selector_reach_events"},"text":"<- Back","color":"green"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

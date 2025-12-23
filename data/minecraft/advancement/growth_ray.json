@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:repeating_command_block",
+          "components": {
+            "minecraft:custom_data": "{growth_ray:1b}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "mwe:growth_ray_function"
+  }
+}

@@ -1,0 +1,5 @@
+playsound minecraft:entity.firework_rocket.twinkle master @a ~ ~ ~ 1 1 1
+playsound minecraft:entity.ender_dragon.ambient master @a ~ ~ ~ 1 2 1
+execute as @e[type=marker,tag=token_spawn] at @s run summon item ~ ~ ~ {Glowing:1b,Age:-200000,Tags:["token_dropped"],Item:{id:"minecraft:command_block",count:1,components:{"minecraft:item_model":"minecraft:gold_nugget","minecraft:item_name":'{"color":"aqua","italic":false,"text":"World Token"}',"minecraft:lore":['{"color":"gray","italic":false,"text":"Use to craft legendary gear!"}'],"minecraft:rarity":"epic"}}}
+execute as @e[type=marker,tag=token_spawn,sort=nearest,limit=1] at @s run tellraw @a [{"color":"gold","text":"A Token has fallen at: "},{"bold":true,"color":"red","score":{"name":"@s","objective":"x"},"underlined":true},{"bold":true,"color":"red","text":" ","underlined":true},{"bold":true,"color":"red","score":{"name":"@s","objective":"y"},"underlined":true},{"bold":true,"color":"red","text":" ","underlined":true},{"bold":true,"color":"red","score":{"name":"@s","objective":"z"},"underlined":true},{"color":"aqua","text":" Happy Hunting!"}]
+kill @e[tag=token_spawn]

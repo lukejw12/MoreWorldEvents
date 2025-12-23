@@ -1,0 +1,49 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "121",
+    "131",
+    "141"
+  ],
+  "key": {
+    "1": [
+      "diamond"
+    ],
+    "2": [
+      "quartz"
+    ],
+    "3": [
+      "minecraft:command_block"
+    ],
+    "4": [
+      "breeze_rod"
+    ]
+  },
+  "result": {
+    "id": "minecraft:repeating_command_block",
+    "components": {
+      "minecraft:custom_data": "{reroll:1b}",
+      "minecraft:item_model": "minecraft:compass",
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Event Shuffler\"}",
+      "minecraft:lore": [
+        "{\"color\":\"gray\",\"italic\":false,\"text\":\"Use to reroll the current event! (GLOBAL)\"}"
+      ],
+      "minecraft:rarity": "rare",
+      "minecraft:max_stack_size": 8,
+      "minecraft:consumable": {
+        "consume_seconds": 9999,
+        "animation": "brush",
+        "has_consume_particles": false
+      },
+      "minecraft:food": {
+        "nutrition": 1,
+        "saturation": 1,
+        "can_always_eat": true
+      }
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

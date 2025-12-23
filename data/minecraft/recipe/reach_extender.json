@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    " 1 ",
+    "234",
+    "2  "
+  ],
+  "key": {
+    "1": [
+      "redstone_torch"
+    ],
+    "2": [
+      "command_block"
+    ],
+    "3": [
+      "minecraft:quartz_block"
+    ],
+    "4": [
+      "minecraft:fishing_rod"
+    ]
+  },
+  "result": {
+    "id": "minecraft:repeating_command_block",
+    "components": {
+      "minecraft:custom_data": "{reach_extender:1b}",
+      "minecraft:item_model": "minecraft:iron_horse_armor",
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Extendo Arm\"}",
+      "minecraft:lore": [
+        "{\"color\":\"gray\",\"italic\":false,\"text\":\"Hold in off-hand to extend reach distance,\"}",
+        "{\"color\":\"gray\",\"italic\":false,\"text\":\"and Immunity to Reach Distance events.\"}"
+
+      ],
+      "minecraft:rarity": "rare"
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

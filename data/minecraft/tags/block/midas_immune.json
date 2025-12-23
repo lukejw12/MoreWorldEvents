@@ -1,0 +1,26 @@
+{
+    "values": [
+      "air",
+      "cave_air",
+      "void_air",
+      "#minecraft:gold_ores",
+      "minecraft:gold_block",
+      "minecraft:raw_gold_block",
+      "minecraft:bedrock",
+      "minecraft:end_portal_frame",
+      "minecraft:reinforced_deepslate",
+      "#minecraft:wither_immune",
+      "water",
+      "lava",
+      "chest",
+      "decorated_pot",
+      "barrel",
+      "ender_chest",
+      "beacon",
+      "short_grass",
+      "tall_grass",
+      "#flowers",
+      "#beds",
+      "#banners"
+    ]
+  }

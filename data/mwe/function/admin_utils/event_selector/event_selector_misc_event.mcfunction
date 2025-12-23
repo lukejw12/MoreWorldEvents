@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"Miscellaneous Events","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/misc_events/acid_rain/options"},"text":"- Acid Rain","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/misc_events/meteor/options"},"text":"- Meteor Shower","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/misc_events/bad_bed/options"},"text":"- Explosive Beds","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/misc_events/token_frenzy/options"},"text":"- Token Frenzy","color":"yellow"}]
+tellraw @s [{"text":"(Still In Development)","color":"dark_gray"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/option_event_selector"},"text":"<- Back","color":"green"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

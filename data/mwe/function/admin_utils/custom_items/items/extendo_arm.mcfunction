@@ -1,0 +1,3 @@
+tellraw @s [{"text":"Item Recieved","color":"green"}]
+give @s repeating_command_block[custom_data={reach_extender:1b},enchantment_glint_override=true,item_model="minecraft:iron_horse_armor",item_name='{"color":"aqua","italic":false,"text":"Extendo Arm"}',lore=['{"color":"gray","italic":false,"text":"Hold in off-hand to extend reach distance,"}','{"color":"gray","italic":false,"text":"and Immunity to Reach Distance events."}'],rarity="rare"] 1
+playsound minecraft:block.note_block.bit master @s ~ ~ ~ 100 1 1

@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"Low Gravity","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/gravity_events/low_gravity/trigger_event"},"text":"Trigger Event","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/gravity_events/low_gravity/disable"},"text":"Disable Event","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/gravity_events/low_gravity/enable"},"text":"Enable Event (Default)","color":"gold"}]
+tellraw @s [{"text":"","color":"dark_gray"}]
+tellraw @s [{"text":"(Still In Development)","color":"dark_gray"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/event_selector_gravity_event"},"text":"<- Back","color":"green"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

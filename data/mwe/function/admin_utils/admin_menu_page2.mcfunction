@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"Admin Menu","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/reset_default_settings/reset_default_menu"},"text":"- Default Settings","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/credits"},"text":"- Credits","color":"gold"}]
+tellraw @s [{"text":"","color":"dark_gray"}]
+tellraw @s [{"text":"","color":"dark_gray"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/admin_menu"},"color":"green","text":"<- Back"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

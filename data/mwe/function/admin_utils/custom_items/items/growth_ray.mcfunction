@@ -1,0 +1,3 @@
+tellraw @s [{"text":"Item Recieved","color":"green"}]
+give @s repeating_command_block[consumable={consume_seconds:9999.0f,animation:"block",has_consume_particles:false},custom_data={growth_ray:1b},enchantment_glint_override=true,food={nutrition:1,saturation:1.0f,can_always_eat:true},item_model="minecraft:golden_horse_armor",item_name='{"color":"light_purple","italic":false,"text":"Growth Ray"}',lore=['{"color":"gray","italic":false,"text":"Right-click to shoot a magical ray,"}','{"color":"gray","italic":false,"text":"which causes the target to grow."}','{"color":"gray","italic":false,"text":"(shoot at glass to reflect the beam.)"}']] 1
+playsound minecraft:block.note_block.bit master @s ~ ~ ~ 100 1 1

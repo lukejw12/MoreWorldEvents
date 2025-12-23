@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"Custom Items","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/custom_items/items/haste_charm"},"text":"- Haste Charm","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/custom_items/items/gold_chunk"},"text":"- Gold Chunk","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/custom_items/items/growth_ray"},"text":"- Growth Ray","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/custom_items/items/shrink_ray"},"text":"- Shrink Ray","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/custom_items/items/extendo_arm"},"text":"- Extendo Arm","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/custom_items/custom_items_menu"},"color":"green","text":"<- Back"},{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/custom_items/custom_items_menu_page3"},"color":"green","text":"  Next ->"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

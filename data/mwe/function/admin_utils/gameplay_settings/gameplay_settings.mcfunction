@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"Gameplay Settings","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/meteor_block_damage_toggle/meteor_block_damage"},"text":"- Meteor Block Damage","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/event_timer/event_timer_menu"},"text":"- Time Between Events","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/custom_crafting/custom_crafting"},"text":"- Custom Recipes Visibility","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/secret_events/secret_events_menu"},"text":"- Secret Events","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:randomeventselector"},"text":"- Trigger Random Event","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/admin_menu"},"color":"green","text":"<- Back"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

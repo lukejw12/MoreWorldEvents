@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"Event Selector","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/event_selector_gravity_event"},"text":"- Gravity Events","color":"gold"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/event_selector_liquid_event"},"text":"- Liquid Events","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/event_selector_warp_event"},"text":"- Warp Events","color":"gold"}]
+tellraw @s [{"text":"- Still in Development)","color":"dark_gray"}]
+tellraw @s [{"text":"- Still in Development)","color":"dark_gray"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/event_selector/option_event_selector"},"color":"green","text":"<- Back"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

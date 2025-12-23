@@ -1,0 +1,55 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "123",
+    "456",
+    "789"
+  ],
+  "key": {
+    "1": [
+      "coal_ore"
+    ],
+    "2": [
+      "copper_ore"
+    ],
+    "3": [
+      "iron_ore"
+    ],
+    "4": [
+      "minecraft:gold_ore"
+    ],
+    "5": [
+      "minecraft:command_block"
+    ],
+    "6": [
+      "minecraft:lapis_ore"
+    ],
+    "7": [
+      "minecraft:redstone_ore"
+    ],
+    "8": [
+      "minecraft:emerald_ore"
+    ],
+    "9": [
+      "minecraft:diamond_ore"
+    ]
+  },
+  "result": {
+    "id": "minecraft:repeating_command_block",
+    "components": {
+      "minecraft:custom_data": "{haste_charm:1b}",
+      "minecraft:item_model": "minecraft:diamond_block",
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"Haste Charm\"}",
+      "minecraft:lore": [
+        "{\"color\":\"gray\",\"italic\":false,\"text\":\"Keep in Inventory to gain 2x Mining Speed,\"}",
+        "{\"color\":\"gray\",\"italic\":false,\"text\":\"and Immunity to Mining Speed Events.\"}"
+
+      ],
+      "minecraft:rarity": "rare"
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

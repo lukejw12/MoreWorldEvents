@@ -1,0 +1,11 @@
+playsound minecraft:block.note_block.guitar master @s ~ ~ ~ 100 2 1
+tellraw @s [{"text":"--------------","color":"dark_gray"}]
+tellraw @s [{"text":"Custom Crafts","color":"aqua"}]
+tellraw @s [{"text":"","color":"aqua"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/custom_crafting/enable"},"text":"- Enable (default)","color":"yellow"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/custom_crafting/disable"},"text":"- Disable","color":"gold"}]
+tellraw @s [{"text":"(This will only hide them from the recipe book!","color":"dark_gray"}]
+tellraw @s [{"text":"They are still craftable!)","color":"dark_gray"}]
+tellraw @s [{"text":"","color":"dark_gray"}]
+tellraw @s [{"clickEvent":{"action":"run_command","value":"/execute as @s run function mwe:admin_utils/gameplay_settings/gameplay_settings"},"color":"green","text":"<- Back"}]
+tellraw @s [{"text":"--------------","color":"dark_gray"}]

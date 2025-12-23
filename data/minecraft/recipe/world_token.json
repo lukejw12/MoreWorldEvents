@@ -1,0 +1,35 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "category": "misc",
+    "pattern": [
+      "121",
+      "131",
+      "141"
+    ],
+    "key": {
+      "1": [
+        "diamond"
+      ],
+      "2": [
+        "netherite_upgrade_smithing_template"
+      ],
+      "3": [
+        "minecraft:command_block"
+      ],
+      "4": [
+        "minecraft:ender_pearl"
+      ]
+    },
+    "result": {
+      "id": "minecraft:command_block",
+      "components": {
+        "minecraft:item_model": "minecraft:gold_nugget",
+        "minecraft:rarity": "epic",
+        "minecraft:item_name": "{\"color\":\"aqua\",\"italic\":false,\"text\":\"World Token\"}",
+        "minecraft:lore": [
+          "{\"color\":\"gray\",\"italic\":false,\"text\":\"Use to craft legendary gear!\"}"
+        ]
+      },
+      "count": 2
+    }
+  }

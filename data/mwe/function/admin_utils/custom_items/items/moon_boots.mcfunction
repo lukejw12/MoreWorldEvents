@@ -1,0 +1,3 @@
+tellraw @s [{"text":"Item Recieved","color":"green"}]
+give @s iron_boots[custom_data={moon_boots:1b},enchantment_glint_override=true,item_name='{"color":"light_purple","italic":false,"text":"Moon Boots"}',lore=['{"color":"gray","italic":false,"text":"Float like a astronaut and gain"}','{"color":"gray","italic":false,"text":"immunity to Gravity events, and fall damage."}'],rarity="epic"] 1
+playsound minecraft:block.note_block.bit master @s ~ ~ ~ 100 1 1

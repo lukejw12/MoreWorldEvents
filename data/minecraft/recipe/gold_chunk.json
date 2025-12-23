@@ -1,0 +1,32 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "111",
+    "121",
+    "111"
+  ],
+  "key": {
+    "1": [
+      "gold_block"
+    ],
+    "2": [
+      "command_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:chain_command_block",
+    "components": {
+      "minecraft:item_model": "minecraft:gold_block",
+      "minecraft:enchantment_glint_override": true,
+      "minecraft:item_name": "{\"color\":\"yellow\",\"italic\":false,\"text\":\"Gold Chunk\"}",
+      "minecraft:lore": [
+        "{\"color\":\"gray\",\"italic\":false,\"text\":\"Crafting Material.\"}"
+      ],
+      "minecraft:rarity": "uncommon",
+      "minecraft:max_stack_size": 64
+    },
+    "count": 1
+  },
+  "show_notification": true
+}

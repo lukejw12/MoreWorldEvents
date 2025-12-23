@@ -1,0 +1,3 @@
+tellraw @s [{"text":"Item Recieved","color":"green"}]
+give @s repeating_command_block[custom_data={haste_charm:1b},enchantment_glint_override=true,item_model="minecraft:diamond_block",item_name='{"color":"aqua","italic":false,"text":"Haste Charm"}',lore=['{"color":"gray","italic":false,"text":"Keep in Inventory to gain 2x Mining Speed,"}','{"color":"gray","italic":false,"text":"and Immunity to Mining Speed Events."}'],rarity="rare"] 1
+playsound minecraft:block.note_block.bit master @s ~ ~ ~ 100 1 1
