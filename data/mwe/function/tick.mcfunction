@@ -1,29 +1,9 @@
-execute if score $acidicwater acidicwater matches 1 if entity @a[tag=acidicwater] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"Corrosive Water"}
-execute if score $acidicwater acidicwater matches 2 if entity @a[tag=acidicwater] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"Effective Lava"}
-execute if score $floor floor matches 1 if entity @a[tag=floor] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"Floor Caves in"}
-execute if score $floor floor matches 2 if entity @a[tag=floor] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"Floor is Lava"}
-execute if score $floor floor matches 3 if entity @a[tag=floor] run scoreboard players display name $event current_event {"bold":false,"color":"dark_green","italic":false,"text":"Midas Touch"}
 execute if score $gravity gravity matches 1 if entity @a[tag=gravity] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"Extreme Gravity"}
 execute if score $gravity gravity matches 2 if entity @a[tag=gravity] run scoreboard players display name $event current_event {"bold":false,"color":"dark_green","italic":false,"text":"Low Gravity"}
-execute if score $minespeed minespeed matches 1 if entity @a[tag=minespeed] run scoreboard players display name $event current_event {"bold":false,"color":"dark_green","italic":false,"text":"2x Mining Speed"}
-execute if score $minespeed minespeed matches 2 if entity @a[tag=minespeed] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"1/2 Mining Speed"}
-execute if score $randomspread randomspread matches 1 if entity @a[tag=randomspread] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"Shuffle"}
-execute if score $randomspread randomspread matches 2 if entity @a[tag=randomspread] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"Warp All"}
-execute if score $reach reach matches 1 if entity @a[tag=reach] run scoreboard players display name $event current_event {"bold":false,"color":"dark_green","italic":false,"text":"2x Reach Distance"}
-execute if score $reach reach matches 2 if entity @a[tag=reach] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"1/2 Reach Distance"}
-execute if score $reach reach matches 3 if entity @a[tag=reach] run scoreboard players display name $event current_event {"bold":false,"color":"dark_green","italic":false,"text":"4x Reach Distance"}
-execute if score $reach reach matches 4 if entity @a[tag=reach] run scoreboard players display name $event current_event {"bold":false,"color":"dark_green","italic":false,"text":"3x Reach Distance"}
-execute if score $reach reach matches 5 if entity @a[tag=reach] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"1/4 Reach Distance"}
-execute if score $randomsize randomsize matches 1 if entity @a[tag=size] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"1 Block Player Size"}
-execute if score $randomsize randomsize matches 2 if entity @a[tag=size] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"4 Block Player Size"}
-execute if score $randomsize randomsize matches 3 if entity @a[tag=size] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"0.6 Block Player Size"}
+
+
 execute if entity @a[tag=tokenc] run scoreboard players display name $event current_event {"bold":false,"color":"gold","italic":false,"text":"Token Hunt!"}
-execute if entity @a[tag=acid_rainc] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"Acid Rain!"}
-execute if entity @a[tag=pumpkin_headc] run scoreboard players display name $sub_event current_event {"bold":false,"color":"red","italic":false,"text":"Get Pumpked!"}
-execute if entity @a[tag=bad_bedc] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"text":"Explosive Beds!"}
-execute if entity @a[tag=meteor] run scoreboard players display name $event current_event {"bold":false,"color":"dark_red","italic":false,"text":"Meteor Shower Soon!"}
-execute if entity @a[tag=meteorL] run scoreboard players display name $event current_event {"bold":false,"color":"red","italic":false,"strikethrough":false,"text":"Another Meteor Shower Soon!"}
-title @a actionbar [{"score":{"name":"$event_timer","objective":"random_event_timer_minutes"}},":",{"score":{"name":"$event_timer","objective":"random_event_timer"}}," Before Next World Event!"]
+
 execute as @a at @s as @e[type=item,distance=..200,tag=token_dropped] at @s run particle end_rod ~ ~ ~ 0 20 0 0.01 200 force
 execute unless entity @e[tag=options,type=marker,tag=disable_crafts] run recipe give @a minecraft:event_shuffler
 execute unless entity @e[tag=options,type=marker,tag=disable_crafts] run recipe give @a minecraft:reach_extender

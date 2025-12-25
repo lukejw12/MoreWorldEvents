@@ -1,3 +1,0 @@
-execute store result score $midas_randomize midas_randomize run random value 1..2
-execute as @a[tag=floorc] at @s if score $floor floor matches 2..3 unless entity @e[tag=options,type=marker,tag=disable_floor_3,tag=disable_floor_2] run function mwe:floor_event_midas
-execute as @a[tag=floorc] at @s if score $floor floor matches 1 unless entity @e[tag=options,type=marker,tag=disable_floor_1] run schedule function mwe:floor_event_collapse 12t append

@@ -1,1 +1,6 @@
-{"replace":false,"values":["mwe:load"]}
+{
+    "values":
+    [
+        "moreworldevents:core/main/world_load"
+        ]
+    }

@@ -1,2 +1,0 @@
-execute if score $floor floor matches 1 as @a[tag=floorc] run execute as @a[nbt=!{Inventory:[{id:"minecraft:golden_helmet",count:1,Slot:103b,components:{"minecraft:custom_data":{midas_crown:1b}}}]}] at @s unless entity @e[tag=options,type=marker,tag=disable_floor_1] unless block ~ ~-1 ~ #midas_immune run setblock ~ ~-1 ~ air
-execute as @a[tag=floorc] at @s run schedule function mwe:floor_event_action 1t

@@ -1,0 +1,18 @@
+{
+  "criteria": {
+    "explosion": {
+      "trigger": "minecraft:entity_hurt_player",
+      "conditions": {
+        "damage": {
+          "source_entity": {
+            "type": "minecraft:tnt",
+            "nbt": "{Tags:[\"mwe.bed_tnt\"]}"
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "moreworldevents:events/type/troll/sub/bed_damage"
+  }
+}

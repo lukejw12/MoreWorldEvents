@@ -1,0 +1,12 @@
+tag @s remove mined_item
+execute if items entity @s contents minecraft:raw_iron run data modify entity @s Item.id set value "minecraft:iron_ingot"
+execute if items entity @s contents minecraft:raw_gold run data modify entity @s Item.id set value "minecraft:gold_ingot"
+execute if items entity @s contents minecraft:raw_copper run data modify entity @s Item.id set value "minecraft:copper_ingot"
+execute if items entity @s contents minecraft:iron_ore run data modify entity @s Item.id set value "minecraft:iron_ingot"
+execute if items entity @s contents minecraft:deepslate_iron_ore run data modify entity @s Item.id set value "minecraft:iron_ingot"
+execute if items entity @s contents minecraft:gold_ore run data modify entity @s Item.id set value "minecraft:gold_ingot"
+execute if items entity @s contents minecraft:deepslate_gold_ore run data modify entity @s Item.id set value "minecraft:gold_ingot"
+execute if items entity @s contents minecraft:copper_ore run data modify entity @s Item.id set value "minecraft:copper_ingot"
+execute if items entity @s contents minecraft:deepslate_copper_ore run data modify entity @s Item.id set value "minecraft:copper_ingot"
+execute if items entity @s contents minecraft:nether_gold_ore run data modify entity @s Item.id set value "minecraft:gold_ingot"
+execute if items entity @s contents minecraft:ancient_debris run data modify entity @s Item.id set value "minecraft:netherite_scrap"

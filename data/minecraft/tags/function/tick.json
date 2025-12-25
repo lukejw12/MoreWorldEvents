@@ -1,1 +1,6 @@
-{"replace":false,"values":["mwe:tick"]}
+{
+    "values":
+    [
+        "moreworldevents:core/main/world_tick"
+        ]
+    }

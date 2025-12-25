@@ -1,0 +1,3 @@
+execute if score #mwe.event_type/sub mwe.event_type matches 1 run function moreworldevents:events/type/floor/sub/flooring {toast:"Midas Touch!",floor_tellraw_color:"red",floor_tellraw:"You have been cursed with the midas touch!"}
+execute if score #mwe.event_type/sub mwe.event_type matches 2 run function moreworldevents:events/type/floor/sub/flooring {toast:"The floor is LAVA!",floor_tellraw_color:"red",floor_tellraw:"The floor is LAVA!"}
+execute if score #mwe.event_type/sub mwe.event_type matches 3 run function moreworldevents:events/type/floor/sub/flooring {toast:"Collapsing Grounds!",floor_tellraw_color:"red",floor_tellraw:"THE GROUND IS CAVING IN!"}

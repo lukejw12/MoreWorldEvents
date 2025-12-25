@@ -1,0 +1,2 @@
+$execute if score #mwe.event_timer/secs mwe.event_timer matches ..9 run title @a actionbar ["$(mins)",":0","$(secs)"," Before Next World Event!"]
+$execute if score #mwe.event_timer/secs mwe.event_timer matches 10.. run title @a actionbar ["$(mins)",":","$(secs)"," Before Next World Event!"]

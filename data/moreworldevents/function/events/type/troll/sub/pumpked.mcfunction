@@ -1,0 +1,29 @@
+# Store random name (now 1-10)
+execute store result score @s mwe.pump_random run random value 1..10
+
+# If wearing helmet, drop it
+execute if items entity @s armor.head * run tellraw @s [{"text":"The pumpkin pushed your helmet off!","color":"dark_gray"}]
+execute if items entity @s armor.head * at @s run summon item ~ ~2 ~ {Motion:[0.0,0.5,0.0],Tags:["mwe.dropped_helmet"],Item:{id:"minecraft:stone",count:1}}
+execute if items entity @s armor.head * at @s run item replace entity @e[type=item,tag=mwe.dropped_helmet,sort=nearest,limit=1,distance=..5] contents from entity @s armor.head
+
+execute if score @s mwe.pump_random matches 1 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"red","italic":false,"text":"Shakls"},minecraft:lore=[{"color":"gray","italic":false,"text":"what even is this"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+execute if score @s mwe.pump_random matches 2 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"red","italic":false,"text":"You got Pumpked!"},minecraft:lore=[{"color":"gray","italic":false,"text":"epic prank bro"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+execute if score @s mwe.pump_random matches 3 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"red","italic":false,"text":"Big Brain"},minecraft:lore=[{"color":"gray","italic":false,"text":"actually very hollow"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+execute if score @s mwe.pump_random matches 4 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"red","italic":false,"text":"Hollow Skulled"},minecraft:lore=[{"color":"gray","italic":false,"text":"no thoughts, head empty"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+execute if score @s mwe.pump_random matches 5 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"red","italic":false,"text":"Haunted Headgear"},minecraft:lore=[{"color":"gray","italic":false,"text":"spooky scary pumpkins"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+execute if score @s mwe.pump_random matches 6 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"gold","italic":false,"text":"Gourd Grief"},minecraft:lore=[{"color":"gray","italic":false,"text":"certified vegetable moment"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+execute if score @s mwe.pump_random matches 7 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"dark_red","italic":false,"text":"Jack-o'-Lantern's Revenge"},minecraft:lore=[{"color":"gray","italic":false,"text":"he's still mad about the candle"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+execute if score @s mwe.pump_random matches 8 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"yellow","italic":false,"text":"Squash Your Dreams"},minecraft:lore=[{"color":"gray","italic":false,"text":"literally"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+execute if score @s mwe.pump_random matches 9 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"light_purple","italic":false,"text":"Pumpkin Spice Nightmare"},minecraft:lore=[{"color":"gray","italic":false,"text":"basic and cursed"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+execute if score @s mwe.pump_random matches 10 run item replace entity @s armor.head with minecraft:carved_pumpkin[minecraft:enchantments={"minecraft:binding_curse":1},minecraft:damage_resistant={types:"#minecraft:is_fire"},minecraft:item_name={"color":"green","italic":false,"text":"Gourdian Angel"},minecraft:lore=[{"color":"gray","italic":false,"text":"protecting your head (badly)"}],minecraft:enchantment_glint_override=true,tooltip_display={hidden_components:[enchantments]}]
+
+tag @e[type=item,tag=mwe.dropped_helmet] remove mwe.dropped_helmet

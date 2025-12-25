@@ -1,0 +1,7 @@
+{
+  "message_id": "acidic_water2",
+  "scaling": "never",
+  "exhaustion": 0.0,
+  "effects": "hurt",
+  "death_message_type": "default"
+}

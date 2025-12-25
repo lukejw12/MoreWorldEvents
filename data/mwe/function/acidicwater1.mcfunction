@@ -1,3 +1,0 @@
-execute if score $acidicwater acidicwater matches 1 as @a[tag=acidicwaterc] unless entity @e[tag=options,type=marker,tag=disable_liquid_1] run execute as @a at @s if block ~ ~ ~ water run damage @s 5 minecraft:lava
-execute if score $acidicwater acidicwater matches 2 as @a[tag=acidicwaterc] unless entity @e[tag=options,type=marker,tag=disable_liquid_2] run execute as @a at @s if block ~ ~ ~ lava run damage @s 10 minecraft:lava
-execute if entity @a[tag=acidicwaterc] run schedule function mwe:acidicwater1 10t

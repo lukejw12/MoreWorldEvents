@@ -1,1 +1,0 @@
-scoreboard players set $event_timer random_event_timer 59
