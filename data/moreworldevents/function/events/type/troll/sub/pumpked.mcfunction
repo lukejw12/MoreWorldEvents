@@ -1,7 +1,5 @@
-# Store random name (now 1-10)
 execute store result score @s mwe.pump_random run random value 1..10
 
-# If wearing helmet, drop it
 execute if items entity @s armor.head * run tellraw @s [{"text":"The pumpkin pushed your helmet off!","color":"dark_gray"}]
 execute if items entity @s armor.head * at @s run summon item ~ ~2 ~ {Motion:[0.0,0.5,0.0],Tags:["mwe.dropped_helmet"],Item:{id:"minecraft:stone",count:1}}
 execute if items entity @s armor.head * at @s run item replace entity @e[type=item,tag=mwe.dropped_helmet,sort=nearest,limit=1,distance=..5] contents from entity @s armor.head

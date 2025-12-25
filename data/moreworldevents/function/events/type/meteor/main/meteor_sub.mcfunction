@@ -1,4 +1,3 @@
 execute if score #mwe.event_type/sub mwe.event_type matches 1 run function moreworldevents:events/type/meteor/sub/meteoring {toast:"Light Meteor Shower!",meteor_tellraw_color:"red",meteor_tellraw:"Light meteor shower"}
 execute if score #mwe.event_type/sub mwe.event_type matches 2 run function moreworldevents:events/type/meteor/sub/meteoring {toast:"Heavy Meteor Shower!",meteor_tellraw_color:"red",meteor_tellraw:"Heavy meteor shower"}
 execute if score #mwe.event_type/sub mwe.event_type matches 3 run function moreworldevents:events/type/meteor/sub/meteoring {toast:"Frequent Meteor Shower!",meteor_tellraw_color:"red",meteor_tellraw:"Frequent meteor shower"}
-# {meteor_tellraw_color:"red",meteor_tellraw:"Meteor Showers!"}

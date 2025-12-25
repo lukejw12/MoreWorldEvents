@@ -1,0 +1,2 @@
+execute if score #mwe.event_type/sub mwe.event_type matches 1 run function moreworldevents:events/type/liquid/sub/liquiding {toast:"Hotter Lava!",liquid_tellraw_color:"red",liquid_tellraw:"Lava is MUCH hotter!"}
+execute if score #mwe.event_type/sub mwe.event_type matches 2 run function moreworldevents:events/type/liquid/sub/liquiding {toast:"Acidic Water!",liquid_tellraw_color:"red",liquid_tellraw:"Water is acidic!"}

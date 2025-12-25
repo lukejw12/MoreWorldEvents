@@ -10,3 +10,8 @@ attribute @s minecraft:safe_fall_distance base reset
 attribute @s minecraft:block_break_speed base reset
 tag @s remove mwe.midas_touch
 tag @s remove mwe.meteor
+
+scoreboard players reset zmeteor_label mwe.display
+scoreboard players reset zmeteor_time mwe.display
+
+schedule clear moreworldevents:events/type/meteor/main/meteor_tick

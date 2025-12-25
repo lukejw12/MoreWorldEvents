@@ -1,0 +1,2 @@
+execute if score #mwe.event_type/sub mwe.event_type matches 1 run function moreworldevents:events/type/troll/sub/trolling {toast:"Get PUMPKED!",troll_tellraw_color:"red",troll_tellraw:"GET PUMPKED"}
+execute if score #mwe.event_type/sub mwe.event_type matches 2 run function moreworldevents:events/type/troll/sub/trolling {toast:"Explosive Beds!",troll_tellraw_color:"red",troll_tellraw:"Go take a Nap!"}

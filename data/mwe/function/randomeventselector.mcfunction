@@ -1,6 +1,6 @@
 schedule clear mwe:meteor
 schedule clear mwe:meteor1
-# Roll random number for next event, and clear previous event tags.
+
 scoreboard players operation $store_previous_event store_previous_event = $randomize randomize
 execute store result score $randomize randomize run random value 1..11
 execute store result score $randomize_pumpkin randomize run random value 1..11

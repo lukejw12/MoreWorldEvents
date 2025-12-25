@@ -1,5 +1,12 @@
+# Main
 execute unless score #mwe.otr mwe.event_timer matches 1 run function moreworldevents:core/main/world_load-otr
-
+scoreboard objectives add mwe.event_id dummy
+scoreboard players set #current mwe.event_id 0
+scoreboard objectives add mwe.rejoin minecraft.custom:minecraft.leave_game
+execute unless entity @e[tag=mwe.options] run summon marker 0 -64 0 {Tags:["mwe.options"]}
+forceload add -1 -1 1 1
+# Admin Menu
+scoreboard objectives add mwe.admin.trigger trigger
 ## Events
 scoreboard objectives add mwe.event_timer dummy
 scoreboard objectives add mwe.temp dummy
@@ -20,6 +27,10 @@ scoreboard objectives add mined.ancient_debris minecraft.mined:minecraft.ancient
 # Troll Events
 scoreboard objectives add mwe.slept_in_bed minecraft.custom:minecraft.sleep_in_bed
 scoreboard objectives add mwe.pump_random dummy
+
+# Meteor Event
+scoreboard objectives add mwe.meteor_timer dummy {"text":"Next Meteor In","color":"red"}
+
 
 # Constants
 scoreboard players set #60 mwe.event_timer 60
