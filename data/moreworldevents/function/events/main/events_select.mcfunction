@@ -7,3 +7,4 @@ execute if score #mwe.event_storage/random mwe.event_storage matches 5 run funct
 execute if score #mwe.event_storage/random mwe.event_storage matches 6 run function moreworldevents:events/type/troll/main/troll_main
 execute if score #mwe.event_storage/random mwe.event_storage matches 7 run function moreworldevents:events/type/floor/main/floor_main
 execute if score #mwe.event_storage/random mwe.event_storage matches 8 run function moreworldevents:events/type/meteor/main/meteor_main
+execute if score #mwe.event_storage/random mwe.event_storage matches 9 run function moreworldevents:events/type/gravity/main/gravity_main

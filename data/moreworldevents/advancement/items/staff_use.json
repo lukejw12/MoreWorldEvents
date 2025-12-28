@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:test_block",
+          "predicates": {
+            "custom_data": {
+              "mwe.ray": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "moreworldevents:items/amethyst_staff/detect"
+  }
+}

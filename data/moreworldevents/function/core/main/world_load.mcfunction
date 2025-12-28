@@ -1,12 +1,12 @@
 # Main
+#gamerule send_command_feedback false
 execute unless score #mwe.otr mwe.event_timer matches 1 run function moreworldevents:core/main/world_load-otr
-scoreboard objectives add mwe.event_id dummy
-scoreboard players set #current mwe.event_id 0
-scoreboard objectives add mwe.rejoin minecraft.custom:minecraft.leave_game
 execute unless entity @e[tag=mwe.options] run summon marker 0 -64 0 {Tags:["mwe.options"]}
 forceload add -1 -1 1 1
+
 # Admin Menu
 scoreboard objectives add mwe.admin.trigger trigger
+
 ## Events
 scoreboard objectives add mwe.event_timer dummy
 scoreboard objectives add mwe.temp dummy
@@ -14,6 +14,10 @@ scoreboard objectives add mwe.event_storage dummy
 scoreboard objectives add mwe.event_type dummy
 scoreboard objectives add mwe.display dummy {"text":"Current Event","color":"aqua"}
 scoreboard objectives setdisplay sidebar mwe.display
+scoreboard objectives add mwe.event_id dummy
+scoreboard players set #current mwe.event_id 0
+scoreboard objectives add mwe.rejoin minecraft.custom:minecraft.leave_game
+
 # Mine Events
 scoreboard objectives add mined.iron_ore minecraft.mined:minecraft.iron_ore
 scoreboard objectives add mined.deepslate_iron_ore minecraft.mined:minecraft.deepslate_iron_ore
@@ -34,3 +38,12 @@ scoreboard objectives add mwe.meteor_timer dummy {"text":"Next Meteor In","color
 
 # Constants
 scoreboard players set #60 mwe.event_timer 60
+scoreboard players set #3600 mwe.event_timer 3600
+scoreboard players set #-1 mwe.temp -1
+scoreboard players set #180 mwe.temp 180
+## Items
+
+# Amethyst Staff
+scoreboard objectives add mwe.staff.use minecraft.used:minecraft.blaze_rod
+scoreboard objectives add mwe.staff.sneak minecraft.custom:minecraft.sneak_time
+scoreboard objectives add mwe.staff.cooldown dummy

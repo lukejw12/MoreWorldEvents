@@ -1,2 +1,4 @@
-$execute if score #mwe.event_timer/secs mwe.event_timer matches ..9 run title @a actionbar ["$(mins)",":0","$(secs)"," Before Next World Event!"]
-$execute if score #mwe.event_timer/secs mwe.event_timer matches 10.. run title @a actionbar ["$(mins)",":","$(secs)"," Before Next World Event!"]
+$execute if score #mwe.event_timer/mins mwe.event_timer matches ..9 if score #mwe.event_timer/secs mwe.event_timer matches ..9 run title @a actionbar ["$(hours)",":0","$(mins)",":0","$(secs)"," Before Next World Event!"]
+$execute if score #mwe.event_timer/mins mwe.event_timer matches ..9 if score #mwe.event_timer/secs mwe.event_timer matches 10.. run title @a actionbar ["$(hours)",":0","$(mins)",":","$(secs)"," Before Next World Event!"]
+$execute if score #mwe.event_timer/mins mwe.event_timer matches 10.. if score #mwe.event_timer/secs mwe.event_timer matches ..9 run title @a actionbar ["$(hours)",":","$(mins)",":0","$(secs)"," Before Next World Event!"]
+$execute if score #mwe.event_timer/mins mwe.event_timer matches 10.. if score #mwe.event_timer/secs mwe.event_timer matches 10.. run title @a actionbar ["$(hours)",":","$(mins)",":","$(secs)"," Before Next World Event!"]

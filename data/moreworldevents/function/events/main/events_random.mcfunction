@@ -9,11 +9,12 @@ execute unless entity @e[tag=mwe.options,tag=disable_sky] run scoreboard players
 execute unless entity @e[tag=mwe.options,tag=disable_troll] run scoreboard players add #valid_count mwe.temp 1
 execute unless entity @e[tag=mwe.options,tag=disable_floor] run scoreboard players add #valid_count mwe.temp 1
 execute unless entity @e[tag=mwe.options,tag=disable_meteor] run scoreboard players add #valid_count mwe.temp 1
+execute unless entity @e[tag=mwe.options,tag=disable_gravity] run scoreboard players add #valid_count mwe.temp 1
 
 execute if score #valid_count mwe.temp matches 0 run tellraw @a [{"text":"[Admin] No valid events enabled! Please enable at least one event.","color":"red"}]
 execute if score #valid_count mwe.temp matches 0 run return fail
 
-execute store result score #random_pick mwe.temp run random value 1..8
+execute store result score #random_pick mwe.temp run random value 1..9
 scoreboard players operation #random_pick mwe.temp %= #valid_count mwe.temp
 scoreboard players add #random_pick mwe.temp 1
 
@@ -57,4 +58,9 @@ execute if score #current_count mwe.temp = #random_pick mwe.temp run return run 
 # Meteor
 execute unless entity @e[tag=mwe.options,tag=disable_meteor] run scoreboard players add #current_count mwe.temp 1
 execute if score #current_count mwe.temp = #random_pick mwe.temp run scoreboard players set #mwe.event_storage/random mwe.event_storage 8
+execute if score #current_count mwe.temp = #random_pick mwe.temp run return run function moreworldevents:events/main/events_select
+
+# Gravity
+execute unless entity @e[tag=mwe.options,tag=disable_gravity] run scoreboard players add #current_count mwe.temp 1
+execute if score #current_count mwe.temp = #random_pick mwe.temp run scoreboard players set #mwe.event_storage/random mwe.event_storage 9
 execute if score #current_count mwe.temp = #random_pick mwe.temp run return run function moreworldevents:events/main/events_select
