@@ -19,7 +19,7 @@ scoreboard players operation #random_pick mwe.temp %= #valid_count mwe.temp
 scoreboard players add #random_pick mwe.temp 1
 
 scoreboard players set #current_count mwe.temp 0
-
+function moreworldevents:events/token_trials/core/check_activation
 # Scale
 execute unless entity @e[tag=mwe.options,tag=disable_scale] run scoreboard players add #current_count mwe.temp 1
 execute if score #current_count mwe.temp = #random_pick mwe.temp run scoreboard players set #mwe.event_storage/random mwe.event_storage 1
@@ -64,6 +64,3 @@ execute if score #current_count mwe.temp = #random_pick mwe.temp run return run 
 execute unless entity @e[tag=mwe.options,tag=disable_gravity] run scoreboard players add #current_count mwe.temp 1
 execute if score #current_count mwe.temp = #random_pick mwe.temp run scoreboard players set #mwe.event_storage/random mwe.event_storage 9
 execute if score #current_count mwe.temp = #random_pick mwe.temp run return run function moreworldevents:events/main/events_select
-
-# Only run token trial check if no event was selected
-function moreworldevents:events/token_trials/core/check_activation

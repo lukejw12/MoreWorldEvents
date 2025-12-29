@@ -4,6 +4,7 @@ execute as @a[scores={mwe.token.task=1000..}] run function moreworldevents:event
 
 scoreboard players reset ztoken_label mwe.display
 scoreboard players reset ztoken_trigger mwe.display
+scoreboard players set #token_trial_active mwe.token.timer 0
 
 tellraw @a [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
 tellraw @a [{"text":"     TOKEN TRIAL ENDED","color":"red"}]

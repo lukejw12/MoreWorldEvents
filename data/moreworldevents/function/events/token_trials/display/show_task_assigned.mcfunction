@@ -1,4 +1,5 @@
-
+scoreboard players operation #display_mins mwe.temp = #token_trial_timer mwe.token.timer
+scoreboard players operation #display_mins mwe.temp /= #60 mwe.event_timer
 
 # NORMAL Task 1001: Mine stone
 execute if score @s mwe.token.task matches 1001 run tellraw @s [{"text":"     NORMAL CHALLENGE ACCEPTED","color":"green","bold":true}]
@@ -7,7 +8,7 @@ execute if score @s mwe.token.task matches 1001 run tellraw @s ""
 execute if score @s mwe.token.task matches 1001 run tellraw @s [{"text":"Task: Mine 1000 Stone","color":"white"}]
 execute if score @s mwe.token.task matches 1001 run tellraw @s [{"text":"Reward: 1 Event Token","color":"aqua"}]
 execute if score @s mwe.token.task matches 1001 run tellraw @s ""
-execute if score @s mwe.token.task matches 1001 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 1001 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 1001 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 1001 run tellraw @s ""
 execute if score @s mwe.token.task matches 1001 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -19,7 +20,7 @@ execute if score @s mwe.token.task matches 1002 run tellraw @s ""
 execute if score @s mwe.token.task matches 1002 run tellraw @s [{"text":"Task: Kill 100 Mobs","color":"white"}]
 execute if score @s mwe.token.task matches 1002 run tellraw @s [{"text":"Reward: 1 Event Token","color":"aqua"}]
 execute if score @s mwe.token.task matches 1002 run tellraw @s ""
-execute if score @s mwe.token.task matches 1002 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 1002 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 1002 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 1002 run tellraw @s ""
 execute if score @s mwe.token.task matches 1002 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -31,7 +32,7 @@ execute if score @s mwe.token.task matches 1003 run tellraw @s ""
 execute if score @s mwe.token.task matches 1003 run tellraw @s [{"text":"Task: Travel 5000 Blocks","color":"white"}]
 execute if score @s mwe.token.task matches 1003 run tellraw @s [{"text":"Reward: 1 Event Token","color":"aqua"}]
 execute if score @s mwe.token.task matches 1003 run tellraw @s ""
-execute if score @s mwe.token.task matches 1003 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 1003 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 1003 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 1003 run tellraw @s ""
 execute if score @s mwe.token.task matches 1003 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -49,7 +50,7 @@ execute if score @s mwe.token.task matches 1004 if score @s mwe.token.farmable m
 
 execute if score @s mwe.token.task matches 1004 run tellraw @s [{"text":"Reward: 1 Event Token","color":"aqua"}]
 execute if score @s mwe.token.task matches 1004 run tellraw @s ""
-execute if score @s mwe.token.task matches 1004 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 1004 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 1004 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 1004 run tellraw @s ""
 execute if score @s mwe.token.task matches 1004 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -61,7 +62,7 @@ execute if score @s mwe.token.task matches 1005 run tellraw @s ""
 execute if score @s mwe.token.task matches 1005 run tellraw @s [{"text":"Task: Deal 500 Damage","color":"white"}]
 execute if score @s mwe.token.task matches 1005 run tellraw @s [{"text":"Reward: 1 Event Token","color":"aqua"}]
 execute if score @s mwe.token.task matches 1005 run tellraw @s ""
-execute if score @s mwe.token.task matches 1005 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 1005 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 1005 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 1005 run tellraw @s ""
 execute if score @s mwe.token.task matches 1005 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -73,7 +74,7 @@ execute if score @s mwe.token.task matches 1006 run tellraw @s ""
 execute if score @s mwe.token.task matches 1006 run tellraw @s [{"text":"Task: Catch 50 Items While Fishing","color":"white"}]
 execute if score @s mwe.token.task matches 1006 run tellraw @s [{"text":"Reward: 1 Event Token","color":"aqua"}]
 execute if score @s mwe.token.task matches 1006 run tellraw @s ""
-execute if score @s mwe.token.task matches 1006 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 1006 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 1006 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 1006 run tellraw @s ""
 execute if score @s mwe.token.task matches 1006 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -85,7 +86,7 @@ execute if score @s mwe.token.task matches 1007 run tellraw @s ""
 execute if score @s mwe.token.task matches 1007 run tellraw @s [{"text":"Task: Breed 25 Animals","color":"white"}]
 execute if score @s mwe.token.task matches 1007 run tellraw @s [{"text":"Reward: 1 Event Token","color":"aqua"}]
 execute if score @s mwe.token.task matches 1007 run tellraw @s ""
-execute if score @s mwe.token.task matches 1007 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 1007 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 1007 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 1007 run tellraw @s ""
 execute if score @s mwe.token.task matches 1007 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -97,7 +98,7 @@ execute if score @s mwe.token.task matches 1008 run tellraw @s ""
 execute if score @s mwe.token.task matches 1008 run tellraw @s [{"text":"Task: Trade 10 Times with Villagers","color":"white"}]
 execute if score @s mwe.token.task matches 1008 run tellraw @s [{"text":"Reward: 1 Event Token","color":"aqua"}]
 execute if score @s mwe.token.task matches 1008 run tellraw @s ""
-execute if score @s mwe.token.task matches 1008 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 1008 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 1008 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 1008 run tellraw @s ""
 execute if score @s mwe.token.task matches 1008 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -109,7 +110,7 @@ execute if score @s mwe.token.task matches 1009 run tellraw @s ""
 execute if score @s mwe.token.task matches 1009 run tellraw @s [{"text":"Task: Gain 30 XP Levels","color":"white"}]
 execute if score @s mwe.token.task matches 1009 run tellraw @s [{"text":"Reward: 1 Event Token","color":"aqua"}]
 execute if score @s mwe.token.task matches 1009 run tellraw @s ""
-execute if score @s mwe.token.task matches 1009 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 1009 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 1009 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 1009 run tellraw @s ""
 execute if score @s mwe.token.task matches 1009 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -127,7 +128,7 @@ execute if score @s mwe.token.task matches 2001 if score @s mwe.token.farmable m
 
 execute if score @s mwe.token.task matches 2001 run tellraw @s [{"text":"Reward: 3 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 2001 run tellraw @s ""
-execute if score @s mwe.token.task matches 2001 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 2001 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 2001 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 2001 run tellraw @s ""
 execute if score @s mwe.token.task matches 2001 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -145,7 +146,7 @@ execute if score @s mwe.token.task matches 2002 if score @s mwe.token.farmable m
 
 execute if score @s mwe.token.task matches 2002 run tellraw @s [{"text":"Reward: 3 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 2002 run tellraw @s ""
-execute if score @s mwe.token.task matches 2002 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 2002 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 2002 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 2002 run tellraw @s ""
 execute if score @s mwe.token.task matches 2002 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -157,7 +158,7 @@ execute if score @s mwe.token.task matches 2003 run tellraw @s ""
 execute if score @s mwe.token.task matches 2003 run tellraw @s [{"text":"Task: Reach the End Dimension","color":"white"}]
 execute if score @s mwe.token.task matches 2003 run tellraw @s [{"text":"Reward: 3 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 2003 run tellraw @s ""
-execute if score @s mwe.token.task matches 2003 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 2003 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 2003 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 2003 run tellraw @s ""
 execute if score @s mwe.token.task matches 2003 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -169,7 +170,7 @@ execute if score @s mwe.token.task matches 2004 run tellraw @s ""
 execute if score @s mwe.token.task matches 2004 run tellraw @s [{"text":"Task: Reach the Nether Dimension","color":"white"}]
 execute if score @s mwe.token.task matches 2004 run tellraw @s [{"text":"Reward: 3 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 2004 run tellraw @s ""
-execute if score @s mwe.token.task matches 2004 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 2004 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 2004 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 2004 run tellraw @s ""
 execute if score @s mwe.token.task matches 2004 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -186,7 +187,7 @@ execute if score @s mwe.token.task matches 2005 if score @s mwe.token.farmable m
 
 execute if score @s mwe.token.task matches 2005 run tellraw @s [{"text":"Reward: 3 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 2005 run tellraw @s ""
-execute if score @s mwe.token.task matches 2005 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 2005 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 2005 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 2005 run tellraw @s ""
 execute if score @s mwe.token.task matches 2005 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -198,7 +199,7 @@ execute if score @s mwe.token.task matches 2006 run tellraw @s ""
 execute if score @s mwe.token.task matches 2006 run tellraw @s [{"text":"Task: Enchant an Item with 3+ Enchantments","color":"white"}]
 execute if score @s mwe.token.task matches 2006 run tellraw @s [{"text":"Reward: 3 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 2006 run tellraw @s ""
-execute if score @s mwe.token.task matches 2006 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 2006 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 2006 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 2006 run tellraw @s ""
 execute if score @s mwe.token.task matches 2006 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -210,7 +211,7 @@ execute if score @s mwe.token.task matches 2007 run tellraw @s ""
 execute if score @s mwe.token.task matches 2007 run tellraw @s [{"text":"Task: Brew a Lingering Potion","color":"white"}]
 execute if score @s mwe.token.task matches 2007 run tellraw @s [{"text":"Reward: 3 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 2007 run tellraw @s ""
-execute if score @s mwe.token.task matches 2007 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 2007 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 2007 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 2007 run tellraw @s ""
 execute if score @s mwe.token.task matches 2007 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -222,7 +223,7 @@ execute if score @s mwe.token.task matches 2008 run tellraw @s ""
 execute if score @s mwe.token.task matches 2008 run tellraw @s [{"text":"Task: Obtain a Max-Level Enchanted Book","color":"white"}]
 execute if score @s mwe.token.task matches 2008 run tellraw @s [{"text":"Reward: 3 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 2008 run tellraw @s ""
-execute if score @s mwe.token.task matches 2008 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 2008 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 2008 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 2008 run tellraw @s ""
 execute if score @s mwe.token.task matches 2008 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -234,7 +235,7 @@ execute if score @s mwe.token.task matches 3001 run tellraw @s ""
 execute if score @s mwe.token.task matches 3001 run tellraw @s [{"text":"Task: Kill 2 Different Boss Mobs","color":"white"}]
 execute if score @s mwe.token.task matches 3001 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3001 run tellraw @s ""
-execute if score @s mwe.token.task matches 3001 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3001 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3001 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3001 run tellraw @s ""
 execute if score @s mwe.token.task matches 3001 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -246,7 +247,7 @@ execute if score @s mwe.token.task matches 3002 run tellraw @s ""
 execute if score @s mwe.token.task matches 3002 run tellraw @s [{"text":"Task: Obtain 3 Different Rare Items","color":"white"}]
 execute if score @s mwe.token.task matches 3002 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3002 run tellraw @s ""
-execute if score @s mwe.token.task matches 3002 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3002 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3002 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3002 run tellraw @s ""
 execute if score @s mwe.token.task matches 3002 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -258,7 +259,7 @@ execute if score @s mwe.token.task matches 3003 run tellraw @s ""
 execute if score @s mwe.token.task matches 3003 run tellraw @s [{"text":"Task: Collect All Netherite Gear Types","color":"white"}]
 execute if score @s mwe.token.task matches 3003 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3003 run tellraw @s ""
-execute if score @s mwe.token.task matches 3003 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3003 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3003 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3003 run tellraw @s ""
 execute if score @s mwe.token.task matches 3003 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -270,7 +271,7 @@ execute if score @s mwe.token.task matches 3004 run tellraw @s ""
 execute if score @s mwe.token.task matches 3004 run tellraw @s [{"text":"Task: Collect All Log Types","color":"white"}]
 execute if score @s mwe.token.task matches 3004 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3004 run tellraw @s ""
-execute if score @s mwe.token.task matches 3004 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3004 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3004 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3004 run tellraw @s ""
 execute if score @s mwe.token.task matches 3004 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -282,7 +283,7 @@ execute if score @s mwe.token.task matches 3005 run tellraw @s ""
 execute if score @s mwe.token.task matches 3005 run tellraw @s [{"text":"Task: Collect All Hostile Mob Drops","color":"white"}]
 execute if score @s mwe.token.task matches 3005 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3005 run tellraw @s ""
-execute if score @s mwe.token.task matches 3005 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3005 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3005 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3005 run tellraw @s ""
 execute if score @s mwe.token.task matches 3005 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -294,7 +295,7 @@ execute if score @s mwe.token.task matches 3006 run tellraw @s ""
 execute if score @s mwe.token.task matches 3006 run tellraw @s [{"text":"Task: Collect All Music Discs","color":"white"}]
 execute if score @s mwe.token.task matches 3006 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3006 run tellraw @s ""
-execute if score @s mwe.token.task matches 3006 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3006 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3006 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3006 run tellraw @s ""
 execute if score @s mwe.token.task matches 3006 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -306,7 +307,7 @@ execute if score @s mwe.token.task matches 3007 run tellraw @s ""
 execute if score @s mwe.token.task matches 3007 run tellraw @s [{"text":"Task: Collect All Armor Trims","color":"white"}]
 execute if score @s mwe.token.task matches 3007 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3007 run tellraw @s ""
-execute if score @s mwe.token.task matches 3007 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3007 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3007 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3007 run tellraw @s ""
 execute if score @s mwe.token.task matches 3007 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -318,7 +319,7 @@ execute if score @s mwe.token.task matches 3008 run tellraw @s ""
 execute if score @s mwe.token.task matches 3008 run tellraw @s [{"text":"Task: Collect All Goat Horns","color":"white"}]
 execute if score @s mwe.token.task matches 3008 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3008 run tellraw @s ""
-execute if score @s mwe.token.task matches 3008 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3008 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3008 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3008 run tellraw @s ""
 execute if score @s mwe.token.task matches 3008 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -330,7 +331,7 @@ execute if score @s mwe.token.task matches 3009 run tellraw @s ""
 execute if score @s mwe.token.task matches 3009 run tellraw @s [{"text":"Task: Obtain a Netherite Block","color":"white"}]
 execute if score @s mwe.token.task matches 3009 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3009 run tellraw @s ""
-execute if score @s mwe.token.task matches 3009 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3009 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3009 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3009 run tellraw @s ""
 execute if score @s mwe.token.task matches 3009 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
@@ -342,7 +343,7 @@ execute if score @s mwe.token.task matches 3010 run tellraw @s ""
 execute if score @s mwe.token.task matches 3010 run tellraw @s [{"text":"Task: Collect All Flower Types","color":"white"}]
 execute if score @s mwe.token.task matches 3010 run tellraw @s [{"text":"Reward: 5 Event Tokens","color":"aqua"}]
 execute if score @s mwe.token.task matches 3010 run tellraw @s ""
-execute if score @s mwe.token.task matches 3010 run tellraw @s [{"text":"Time Remaining: 15 minutes","color":"yellow"}]
+execute if score @s mwe.token.task matches 3010 run tellraw @s [{"text":"Time Remaining: ","color":"yellow"},{"score":{"name":"#display_mins","objective":"mwe.temp"},"color":"yellow"},{"text":" minutes","color":"yellow"}]
 execute if score @s mwe.token.task matches 3010 run tellraw @s [{"text":"Use /trigger mwe.task to check progress","color":"dark_gray"}]
 execute if score @s mwe.token.task matches 3010 run tellraw @s ""
 execute if score @s mwe.token.task matches 3010 run tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]

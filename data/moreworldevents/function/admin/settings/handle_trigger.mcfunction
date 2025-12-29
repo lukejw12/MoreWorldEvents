@@ -20,7 +20,55 @@ execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 25 run function
 execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 26 run function moreworldevents:admin/settings/toggle_category {category:"floor"}
 execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 27 run function moreworldevents:admin/settings/toggle_category {category:"meteor"}
 execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 28 run function moreworldevents:admin/settings/toggle_category {category:"gravity"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 29 run function moreworldevents:admin/settings/toggle_category {category:"token_trials"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 129 run function moreworldevents:admin/menu/events/token_trials
 
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 130 run function moreworldevents:admin/menu/token_trials/timer
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 131 run function moreworldevents:admin/menu/token_trials/events
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 132 run function moreworldevents:admin/menu/token_trials/normal
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 133 run function moreworldevents:admin/menu/token_trials/hard
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 134 run function moreworldevents:admin/menu/token_trials/challenge
+
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 135 run function moreworldevents:admin/settings/token_trials/timer/hour_up
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 136 run function moreworldevents:admin/settings/token_trials/timer/hour_down
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 137 run function moreworldevents:admin/settings/token_trials/timer/minute_up
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 138 run function moreworldevents:admin/settings/token_trials/timer/minute_down
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 139 run function moreworldevents:admin/settings/token_trials/timer/second_up
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 140 run function moreworldevents:admin/settings/token_trials/timer/second_down
+
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 141 run function moreworldevents:admin/settings/token_trials/toggle_difficulty {difficulty:"normal"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 142 run function moreworldevents:admin/settings/token_trials/toggle_difficulty {difficulty:"hard"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 143 run function moreworldevents:admin/settings/token_trials/toggle_difficulty {difficulty:"challenge"}
+
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 1001 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"1001",menu:"normal"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 1002 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"1002",menu:"normal"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 1003 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"1003",menu:"normal"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 1004 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"1004",menu:"normal"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 1005 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"1005",menu:"normal"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 1006 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"1006",menu:"normal"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 1007 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"1007",menu:"normal"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 1008 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"1008",menu:"normal"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 1009 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"1009",menu:"normal"}
+
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 2001 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"2001",menu:"hard"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 2002 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"2002",menu:"hard"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 2003 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"2003",menu:"hard"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 2004 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"2004",menu:"hard"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 2005 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"2005",menu:"hard"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 2006 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"2006",menu:"hard"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 2007 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"2007",menu:"hard"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 2008 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"2008",menu:"hard"}
+
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3001 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3001",menu:"challenge"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3002 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3002",menu:"challenge"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3003 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3003",menu:"challenge"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3004 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3004",menu:"challenge"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3005 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3005",menu:"challenge"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3006 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3006",menu:"challenge"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3007 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3007",menu:"challenge"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3008 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3008",menu:"challenge"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3009 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3009",menu:"challenge"}
+execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 3010 run function moreworldevents:admin/settings/token_trials/toggle_task {task:"3010",menu:"challenge"}
 
 execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 120 run function moreworldevents:admin/menu/events/scale
 execute if score @s[tag=!mwe.survival] mwe.admin.trigger matches 121 run function moreworldevents:admin/menu/events/mine

@@ -9,7 +9,7 @@ scoreboard players reset @s mwe.token.progress
 
 execute unless entity @a[scores={mwe.token.task=1000..}] run scoreboard players reset ztoken_label mwe.display
 execute unless entity @a[scores={mwe.token.task=1000..}] run scoreboard players reset ztoken_trigger mwe.display
-
+scoreboard players set #token_trial_active mwe.token.timer 0
 tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
 tellraw @s [{"text":"     TASK COMPLETED!","color":"green","bold":true}]
 tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]

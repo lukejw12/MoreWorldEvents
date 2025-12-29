@@ -1,7 +1,9 @@
 scoreboard players set #events_since_token mwe.temp 0
 
 scoreboard players set #token_trial_active mwe.token.timer 1
-scoreboard players set #token_trial_time mwe.token.timer 18000
+
+scoreboard players operation #token_trial_time mwe.token.timer = #token_trial_timer mwe.token.timer
+scoreboard players operation #token_trial_time mwe.token.timer *= #20 mwe.temp
 
 scoreboard players enable @a mwe.token.difficulty
 scoreboard players enable @a mwe.task
