@@ -3,7 +3,6 @@
 execute unless score #mwe.otr mwe.event_timer matches 1 run function moreworldevents:core/main/world_load-otr
 execute unless entity @e[tag=mwe.options] run summon marker 0 -64 0 {Tags:["mwe.options"]}
 forceload add -1 -1 1 1
-
 # Admin Menu
 scoreboard objectives add mwe.admin.trigger trigger
 
@@ -62,6 +61,16 @@ scoreboard objectives add mwe.stat.damage minecraft.custom:minecraft.damage_deal
 scoreboard objectives add mwe.stat.fish minecraft.custom:minecraft.fish_caught
 scoreboard objectives add mwe.stat.breed minecraft.custom:minecraft.animals_bred
 scoreboard objectives add mwe.stat.trade minecraft.custom:minecraft.traded_with_villager
+scoreboard objectives add mwe.stat.walk minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add mwe.stat.sprint minecraft.custom:minecraft.sprint_one_cm
+scoreboard objectives add mwe.stat.crouch minecraft.custom:minecraft.crouch_one_cm
+scoreboard objectives add mwe.stat.fly minecraft.custom:minecraft.fly_one_cm
+scoreboard objectives add mwe.stat.elytra minecraft.custom:minecraft.aviate_one_cm
+scoreboard objectives add mwe.stat.boat minecraft.custom:minecraft.boat_one_cm
+scoreboard objectives add mwe.stat.cart minecraft.custom:minecraft.minecart_one_cm
+scoreboard objectives add mwe.stat.horse minecraft.custom:minecraft.horse_one_cm
+scoreboard objectives add mwe.stat.pig minecraft.custom:minecraft.pig_one_cm
+scoreboard objectives add mwe.stat.swim minecraft.custom:minecraft.swim_one_cm
 
 ## Items
 

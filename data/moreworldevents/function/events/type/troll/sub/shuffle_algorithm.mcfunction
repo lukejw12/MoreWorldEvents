@@ -1,0 +1,1 @@
+function moreworldevents:events/type/troll/sub/shuffle_slot {slot:35}

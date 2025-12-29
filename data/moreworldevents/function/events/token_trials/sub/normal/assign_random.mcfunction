@@ -14,7 +14,17 @@ scoreboard players set @s mwe.token.progress 0
 
 execute if score #task_pick mwe.temp matches 1 run scoreboard players operation @s mwe.token.baseline = @s mwe.stat.stone_mined
 execute if score #task_pick mwe.temp matches 2 run scoreboard players operation @s mwe.token.baseline = @s mwe.stat.mob_kills
-execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline = @s mwe.stat.walk_dist
+execute if score #task_pick mwe.temp matches 3 run scoreboard players set @s mwe.token.baseline 0
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.walk
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.sprint
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.crouch
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.fly
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.elytra
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.boat
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.cart
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.horse
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.pig
+execute if score #task_pick mwe.temp matches 3 run scoreboard players operation @s mwe.token.baseline += @s mwe.stat.swim
 execute if score #task_pick mwe.temp matches 5 run scoreboard players operation @s mwe.token.baseline = @s mwe.stat.damage
 execute if score #task_pick mwe.temp matches 6 run scoreboard players operation @s mwe.token.baseline = @s mwe.stat.fish
 execute if score #task_pick mwe.temp matches 7 run scoreboard players operation @s mwe.token.baseline = @s mwe.stat.breed

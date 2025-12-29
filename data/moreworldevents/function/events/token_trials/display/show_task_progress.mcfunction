@@ -1,31 +1,32 @@
 execute unless score @s mwe.token.task matches 1.. run tellraw @s {"text":"You don't have an active Token Trial task!","color":"red"}
 execute unless score @s mwe.token.task matches 1.. run return fail
-scoreboard players operation #minutes mwe.temp = @s mwe.token.timer
+
+scoreboard players operation #minutes mwe.temp = #token_trial_time mwe.token.timer
 scoreboard players operation #minutes mwe.temp /= #1200 mwe.temp
-scoreboard players operation #seconds mwe.temp = @s mwe.token.timer
+scoreboard players operation #seconds mwe.temp = #token_trial_time mwe.token.timer
 scoreboard players operation #seconds mwe.temp %= #1200 mwe.temp
 scoreboard players operation #seconds mwe.temp /= #20 mwe.temp
 
-tellraw @s {"text":"","extra":[{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"gold","bold":true}]}
+tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]
 
-# NORMAL TIER (1001-1009)
-execute if score @s mwe.token.task matches 1001 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Mine 64 Stone","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/64","color":"gray"}]
+# NORMAL TIER (1001-)
+execute if score @s mwe.token.task matches 1001 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Mine 1000 Stone","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/1000","color":"gray"}]
 
-execute if score @s mwe.token.task matches 1002 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Kill 10 Hostile Mobs","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/10","color":"gray"}]
+execute if score @s mwe.token.task matches 1002 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Kill 100 Hostile Mobs","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/100","color":"gray"}]
 
-execute if score @s mwe.token.task matches 1003 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Travel 1000 Blocks","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/1000","color":"gray"}]
+execute if score @s mwe.token.task matches 1003 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Travel 5000 Blocks","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/5000","color":"gray"}]
 
-execute if score @s mwe.token.task matches 1004 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Collect 32 Farmables","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/32","color":"gray"}]
+execute if score @s mwe.token.task matches 1004 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Collect 64 Farmables","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/64","color":"gray"}]
 
-execute if score @s mwe.token.task matches 1005 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Deal 100 Damage","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/100","color":"gray"}]
+execute if score @s mwe.token.task matches 1005 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Deal 500 Damage","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/500","color":"gray"}]
 
-execute if score @s mwe.token.task matches 1006 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Catch 10 Fish","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/10","color":"gray"}]
+execute if score @s mwe.token.task matches 1006 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Catch 50 Fish","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/50","color":"gray"}]
 
-execute if score @s mwe.token.task matches 1007 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Breed 5 Animals","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/5","color":"gray"}]
+execute if score @s mwe.token.task matches 1007 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Breed 25 Animals","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/25","color":"gray"}]
 
-execute if score @s mwe.token.task matches 1008 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Trade with Villagers 3 Times","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/3","color":"gray"}]
+execute if score @s mwe.token.task matches 1008 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Trade 10 Times","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/10","color":"gray"}]
 
-execute if score @s mwe.token.task matches 1009 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Gain 100 XP Levels","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/100","color":"gray"}]
+execute if score @s mwe.token.task matches 1009 run tellraw @s [{"text":"[NORMAL] ","color":"green","bold":true},{"text":"Gain 30 XP Levels","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/30","color":"gray"}]
 
 # HARD TIER (2001-2008)
 execute if score @s mwe.token.task matches 2001 if score @s mwe.token.farmable matches 1 run tellraw @s [{"text":"[HARD] ","color":"gold","bold":true},{"text":"Kill an Elder Guardian","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/1","color":"gray"}]
@@ -81,7 +82,7 @@ execute if score @s mwe.token.task matches 3004 run tellraw @s [{"text":"[CHALLE
 
 execute if score @s mwe.token.task matches 3005 run tellraw @s [{"text":"[CHALLENGE] ","color":"light_purple","bold":true},{"text":"Collect 18 Mob Drops","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/18","color":"gray"}]
 
-execute if score @s mwe.token.task matches 3006 run tellraw @s [{"text":"[CHALLENGE] ","color":"light_purple","bold":true},{"text":"Collect All 18 Music Discs","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/18","color":"gray"}]
+execute if score @s mwe.token.task matches 3006 run tellraw @s [{"text":"[CHALLENGE] ","color":"light_purple","bold":true},{"text":"Collect All 21 Music Discs","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/21","color":"gray"}]
 
 execute if score @s mwe.token.task matches 3007 run tellraw @s [{"text":"[CHALLENGE] ","color":"light_purple","bold":true},{"text":"Collect All 20 Armor Trims","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/20","color":"gray"}]
 
@@ -91,10 +92,10 @@ execute if score @s mwe.token.task matches 3009 run tellraw @s [{"text":"[CHALLE
 
 execute if score @s mwe.token.task matches 3010 run tellraw @s [{"text":"[CHALLENGE] ","color":"light_purple","bold":true},{"text":"Collect All 24 Flowers","color":"white","bold":false},{"text":"\nProgress: ","color":"gray"},{"score":{"name":"@s","objective":"mwe.token.progress"},"color":"yellow"},{"text":"/24","color":"gray"}]
 
-tellraw @s [{"text":"⏱ Time Remaining: ","color":"aqua"},{"score":{"name":"#minutes","objective":"mwe.temp"},"color":"white"},{"text":"m ","color":"white"},{"score":{"name":"#seconds","objective":"mwe.temp"},"color":"white"},{"text":"s","color":"white"}]
+tellraw @s [{"text":"Time Remaining: ","color":"aqua"},{"score":{"name":"#minutes","objective":"mwe.temp"},"color":"white"},{"text":"m ","color":"white"},{"score":{"name":"#seconds","objective":"mwe.temp"},"color":"white"},{"text":"s","color":"white"}]
 
-execute if score @s mwe.token.task matches 1000..1999 run tellraw @s [{"text":"🏆 Reward: ","color":"yellow"},{"text":"1 Event Token","color":"gold"}]
-execute if score @s mwe.token.task matches 2000..2999 run tellraw @s [{"text":"🏆 Reward: ","color":"yellow"},{"text":"3 Event Tokens","color":"gold"}]
-execute if score @s mwe.token.task matches 3000..3999 run tellraw @s [{"text":"🏆 Reward: ","color":"yellow"},{"text":"5 Event Tokens","color":"gold"}]
+execute if score @s mwe.token.task matches 1000..1999 run tellraw @s [{"text":"Reward: ","color":"yellow"},{"text":"1 Event Token","color":"gold"}]
+execute if score @s mwe.token.task matches 2000..2999 run tellraw @s [{"text":"Reward: ","color":"yellow"},{"text":"3 Event Tokens","color":"gold"}]
+execute if score @s mwe.token.task matches 3000..3999 run tellraw @s [{"text":"Reward: ","color":"yellow"},{"text":"5 Event Tokens","color":"gold"}]
 
-tellraw @s {"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"gold","bold":true}
+tellraw @s [{"text":"━━━━━━━━━━━━━━━━━━━━━━━━━━━━━","color":"dark_gray"}]

@@ -73,4 +73,4 @@ execute if score #temp mwe.temp matches 1.. run scoreboard players add @s mwe.to
 execute store result score #temp mwe.temp run clear @s minecraft:chorus_flower 0
 execute if score #temp mwe.temp matches 1.. run scoreboard players add @s mwe.token.progress 1
 
-execute if score @s mwe.token.progress matches 25.. run function moreworldevents:events/token_trials/core/complete_task
+execute if score @s mwe.token.progress matches 24.. run function moreworldevents:events/token_trials/core/complete_task
