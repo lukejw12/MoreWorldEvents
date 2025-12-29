@@ -5,3 +5,4 @@ execute as @e[tag=mwe.meteor_damage] at @s as @a[distance=..5] run damage @s 16 
 execute as @e[tag=mwe.meteor_damage] at @s as @a[distance=..5] run damage @s 16 moreworldevents:meteor2 by @e[tag=mwe.meteor_damage,limit=1,sort=nearest]
 execute as @e[tag=mwe.meteor_damage] at @s as @a[distance=..5] run damage @s 16 moreworldevents:meteor3 by @e[tag=mwe.meteor_damage,limit=1,sort=nearest]
 execute as @a at @s run function moreworldevents:events/main/player_tick
+function moreworldevents:events/token_trials/core/tick

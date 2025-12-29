@@ -1,0 +1,17 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": {
+            "location": {
+            "structures": "minecraft:bastion_remnant"
+            }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "moreworldevents:events/token_trials/advancements/enter_bastion"
+  }
+}

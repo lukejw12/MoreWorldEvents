@@ -1,0 +1,1 @@
+execute if score @s mwe.token.progress matches 1.. run function moreworldevents:events/token_trials/core/complete_task

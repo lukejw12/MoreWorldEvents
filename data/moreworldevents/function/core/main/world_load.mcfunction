@@ -41,9 +41,32 @@ scoreboard players set #60 mwe.event_timer 60
 scoreboard players set #3600 mwe.event_timer 3600
 scoreboard players set #-1 mwe.temp -1
 scoreboard players set #180 mwe.temp 180
+scoreboard players set #10 mwe.temp 10
+scoreboard players set #100 mwe.temp 100
+scoreboard players set #20 mwe.temp 20
+scoreboard players set #1200 mwe.temp 1200
+
+# Token Trial
+# Token Trial management scoreboards
+scoreboard objectives add mwe.token.difficulty trigger
+scoreboard objectives add mwe.task trigger
+scoreboard objectives add mwe.token.timer dummy
+scoreboard objectives add mwe.token.task dummy
+scoreboard objectives add mwe.token.progress dummy
+scoreboard objectives add mwe.token.baseline dummy
+scoreboard objectives add mwe.token.farmable dummy
+scoreboard objectives add mwe.stat.stone_mined minecraft.mined:minecraft.stone
+scoreboard objectives add mwe.stat.mob_kills dummy
+scoreboard objectives add mwe.stat.walk_dist minecraft.custom:minecraft.walk_one_cm
+scoreboard objectives add mwe.stat.damage minecraft.custom:minecraft.damage_dealt
+scoreboard objectives add mwe.stat.fish minecraft.custom:minecraft.fish_caught
+scoreboard objectives add mwe.stat.breed minecraft.custom:minecraft.animals_bred
+scoreboard objectives add mwe.stat.trade minecraft.custom:minecraft.traded_with_villager
+
 ## Items
 
 # Amethyst Staff
 scoreboard objectives add mwe.staff.use minecraft.used:minecraft.blaze_rod
 scoreboard objectives add mwe.staff.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add mwe.staff.cooldown dummy
+
