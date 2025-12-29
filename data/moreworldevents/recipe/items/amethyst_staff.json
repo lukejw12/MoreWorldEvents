@@ -1,0 +1,68 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 12",
+    " 31",
+    "3  "
+  ],
+  "key": {
+    "1": [
+      "minecraft:string"
+    ],
+    "2": [
+      "minecraft:amethyst_shard"
+    ],
+    "3": [
+      "minecraft:stick"
+    ]
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:item_name": {
+        "text": "Amethyst Staff",
+        "color": "light_purple",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Shift + Right-Click to toggle mode",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Charge with Amethyst Core",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": " "
+        },
+        {
+          "text": "Mode: Growth",
+          "color": "green",
+          "italic": false
+        },
+        {
+          "text": "Charges: 0/20",
+          "color": "aqua",
+          "italic": false
+        }
+      ],
+      "minecraft:consumable": {
+        "consume_seconds": 9999.0,
+        "animation": "spear",
+        "sound": "minecraft:intentionally_empty"
+      },
+      "minecraft:custom_data": {
+        "mwe.ray": 1,
+        "mode": "grow",
+        "charges": 0
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:item_model": "moreworldevents:amethyst_staff/as",
+      "!minecraft:food": {}
+    }
+  }
+}

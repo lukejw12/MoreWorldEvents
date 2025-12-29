@@ -12,6 +12,6 @@ execute store result storage mwe:staff charges int 1 run scoreboard players get 
 
 execute if data storage mwe:staff {mode:"grow"} run function moreworldevents:items/amethyst_staff/update_lore_grow with storage mwe:staff
 execute if data storage mwe:staff {mode:"shrink"} run function moreworldevents:items/amethyst_staff/update_lore_shrink with storage mwe:staff
-
+title @s title ""
+title @s subtitle {"text":"Charged: +10","color":"#4404f9","shadow_color":0}
 playsound minecraft:block.amethyst_block.chime player @s ~ ~ ~ 1 1.5
-say test

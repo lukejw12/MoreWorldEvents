@@ -13,6 +13,7 @@ scoreboard objectives add mwe.event_storage dummy
 scoreboard objectives add mwe.event_type dummy
 scoreboard objectives add mwe.display dummy {"text":"Current Event","color":"aqua"}
 scoreboard objectives setdisplay sidebar mwe.display
+scoreboard players display numberformat event mwe.display blank
 scoreboard objectives add mwe.event_id dummy
 scoreboard players set #current mwe.event_id 0
 scoreboard objectives add mwe.rejoin minecraft.custom:minecraft.leave_game
@@ -48,7 +49,7 @@ scoreboard players set #1200 mwe.temp 1200
 # Token Trial
 # Token Trial management scoreboards
 scoreboard objectives add mwe.token.difficulty trigger
-scoreboard objectives add mwe.task trigger
+scoreboard objectives add mwe.task trigger "Task Menu"
 scoreboard objectives add mwe.token.timer dummy
 scoreboard objectives add mwe.token.task dummy
 scoreboard objectives add mwe.token.progress dummy

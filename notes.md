@@ -22,7 +22,7 @@
 - [ ] Add Counter Items to counteract effects from events
 - [x] Add Rejoin Event, Apply tags and whatnot to players who rejoin
 - [ ] Stop Procrastinating
-- [ ]Add recipes for event tokens
+- [ ] Add recipes for event tokens
 - [ ] Update event token item to use texture
 - [ ] Finish Counter Items
 

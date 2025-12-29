@@ -1,4 +1,4 @@
-give @s test_block[\
+give @s poisonous_potato[\
   minecraft:item_name={"text":"Amethyst Staff","color":"light_purple","italic":false},\
   minecraft:lore=[\
     {"text":"Shift + Right-Click to toggle mode","color":"gray","italic":false},\
@@ -18,5 +18,6 @@ give @s test_block[\
     charges:0\
   },\
   minecraft:max_stack_size=1,\
-  item_model="moreworldevents:amethyst_staff/as"\
-]
+  item_model="moreworldevents:amethyst_staff/as",\
+  !food\
+  ]

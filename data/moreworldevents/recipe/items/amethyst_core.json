@@ -1,0 +1,58 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " 12",
+    "131",
+    "21 "
+  ],
+  "key": {
+    "1": [
+      "minecraft:amethyst_shard"
+    ],
+    "2": [
+      "minecraft:gold_ingot"
+    ],
+    "3": [
+      "minecraft:test_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:test_instance_block",
+    "components": {
+      "minecraft:item_model": "moreworldevents:event_token_results/amethyst_core",
+      "minecraft:custom_data": {
+        "mwe.amethyst_core": true
+      },
+"minecraft:item_name": {
+        "text": "Amethyst Core",
+        "color": "aqua",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Shift + Right-Click in offhand",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "with Amethyst Staff equipped",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "to charge staff!",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "color": "dark_gray",
+          "italic": false
+        }
+      ],
+      "max_stack_size": 16
+    },
+    "count": 2
+  }
+}
