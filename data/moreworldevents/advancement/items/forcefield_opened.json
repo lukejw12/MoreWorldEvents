@@ -1,0 +1,34 @@
+{
+"criteria": {
+    "requirement": {
+      "trigger": "minecraft:default_block_use",
+      "conditions": {
+        "player": {},
+        "location": [
+          {
+            "condition": "minecraft:location_check",
+            "predicate": {
+              "block": {
+                "blocks": "minecraft:barrel",
+                "predicates": {
+                  "minecraft:container": {
+                    "items": {
+                      "contains": [
+                        {
+                          "items": "barrier"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "rewards": {
+    "function": "moreworldevents:items/forcefield/gui/check_open"
+}
+}

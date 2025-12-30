@@ -1,1 +1,1 @@
-summon fireball ~ ~50 ~ {ExplosionPower:40b,Motion:[0.0,-0.1,0.0],Tags:["mwe.meteor","mwe.meteor_damage","mwe.massive"],Item:{id:"minecraft:magma_block",count:1}}
+summon fireball ~ ~50 ~ {ExplosionPower:40b,Motion:[0.0,-0.12,0.0],Tags:["mwe.meteor","mwe.meteor_damage","mwe.massive"],Item:{id:"minecraft:magma_block",count:1}}

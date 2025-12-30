@@ -80,3 +80,10 @@ scoreboard objectives add mwe.staff.use minecraft.used:minecraft.blaze_rod
 scoreboard objectives add mwe.staff.sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add mwe.staff.cooldown dummy
 
+# Forcefield System
+scoreboard objectives add mwe.ff.fuel dummy
+scoreboard objectives add mwe.ff.radius dummy
+scoreboard objectives add mwe.ff.active dummy
+scoreboard objectives add mwe.ff.gui dummy
+scoreboard objectives add mwe.ff.just_opened dummy
+scoreboard objectives add mwe.ff.tick dummy

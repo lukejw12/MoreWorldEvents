@@ -1,0 +1,1 @@
+execute if data block ~ ~ ~ Items[{Slot:10b,components:{"minecraft:custom_data":{mwe.battery:1b}}}] run function moreworldevents:items/forcefield/gui/add_fuel
