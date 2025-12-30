@@ -1,4 +1,3 @@
-# Kill fireballs within radius when active (check each radius value)
 execute if score @s mwe.ff.active matches 1 positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 5 as @e[type=fireball,distance=..5] at @s run function moreworldevents:items/forcefield/destroy_fireball
 execute if score @s mwe.ff.active matches 1 positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 10 as @e[type=fireball,distance=..10] at @s run function moreworldevents:items/forcefield/destroy_fireball
 execute if score @s mwe.ff.active matches 1 positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 15 as @e[type=fireball,distance=..15] at @s run function moreworldevents:items/forcefield/destroy_fireball

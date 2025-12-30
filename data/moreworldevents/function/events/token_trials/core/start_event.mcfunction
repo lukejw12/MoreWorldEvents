@@ -9,7 +9,7 @@ scoreboard players enable @a mwe.token.difficulty
 scoreboard players enable @a mwe.task
 
 scoreboard players set ztoken_label mwe.display 1
-scoreboard players set ztoken_trigger mwe.display 2
+scoreboard players set ztoken_trigger mwe.display 1
 
 scoreboard players display name ztoken_label mwe.display {"text":"Token Trial is active!","color":"gold"}
 scoreboard players display numberformat ztoken_label mwe.display blank

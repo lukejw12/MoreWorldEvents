@@ -26,7 +26,6 @@
       },
 "minecraft:item_name": {
         "text": "Amethyst Core",
-        "color": "aqua",
         "italic": false
       },
       "minecraft:lore": [
@@ -51,7 +50,8 @@
           "italic": false
         }
       ],
-      "max_stack_size": 16
+      "max_stack_size": 16,
+      "rarity": "rare"
     },
     "count": 2
   }
