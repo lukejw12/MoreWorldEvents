@@ -1,3 +1,6 @@
+# Items
+- [ ] Amethyst Staff
+- [ ] Forcefield Generator
 # Events
 - [x] Token Frenzy
 - [x] Size Events
@@ -16,7 +19,7 @@
 - [x] Reach Events
 - [x] Gravity Events
 
-## General To-Do
+# General To-Do
 - [x] Add Death messages for meteor, floor, troll, and sky events
 - [x] Add Admin Menu
 - [ ] Add Counter Items to counteract effects from events
@@ -26,6 +29,7 @@
 - [ ] Update event token item to use texture
 - [ ] Finish Counter Items
 
+# Challenges
 ## NORMAL Challenges (1 token)
 
 - [x] Mine 1000 stone

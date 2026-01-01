@@ -9,8 +9,8 @@ function moreworldevents:items/forcefield/gui/protect_slot {slot:5,tag:mwe.gui_i
 function moreworldevents:items/forcefield/gui/protect_slot {slot:6,tag:mwe.gui_item,item:"minecraft:barrier[minecraft:item_name=\"\",minecraft:custom_data={mwe.gui_item:1b},tooltip_display={hide_tooltip:true},item_model=\"moreworldevents:gui/parts/forcefield/blocked_slot_buttons\"]"}
 function moreworldevents:items/forcefield/gui/protect_slot {slot:7,tag:mwe.gui_item,item:"minecraft:barrier[minecraft:item_name=\"\",minecraft:custom_data={mwe.gui_item:1b},tooltip_display={hide_tooltip:true},item_model=\"moreworldevents:gui/parts/forcefield/blocked_slot_buttons\"]"}
 function moreworldevents:items/forcefield/gui/protect_slot {slot:8,tag:mwe.gui_item,item:"minecraft:barrier[minecraft:item_name=\"\",minecraft:custom_data={mwe.gui_item:1b},tooltip_display={hide_tooltip:true},item_model=\"moreworldevents:gui/parts/blocked_slot\"]"}
-function moreworldevents:items/forcefield/gui/protect_slot {slot:9,tag:mwe.gui_item,item:"minecraft:barrier[minecraft:item_name=\"\",minecraft:custom_data={mwe.gui_item:1b},tooltip_display={hide_tooltip:true},item_model=\"moreworldevents:gui/parts/blocked_slot\"]"}
-
+execute unless data block ~ ~ ~ Items[{Slot:9b}] run function moreworldevents:items/forcefield/toggle_particles
+execute if data block ~ ~ ~ Items[{Slot:9b}] unless data block ~ ~ ~ Items[{Slot:9b,components:{"minecraft:custom_data":{mwe.particles:1b}}}] run function moreworldevents:items/forcefield/gui/eject_and_toggle
 function moreworldevents:items/forcefield/gui/protect_slot {slot:11,tag:mwe.gui_item,item:"minecraft:barrier[minecraft:item_name=\"\",minecraft:custom_data={mwe.gui_item:1b},tooltip_display={hide_tooltip:true},item_model=\"moreworldevents:gui/parts/blocked_slot\"]"}
 
 function moreworldevents:items/forcefield/gui/protect_slot {slot:13,tag:mwe.gui_item,item:"minecraft:barrier[minecraft:item_name=\"\",minecraft:custom_data={mwe.gui_item:1b},tooltip_display={hide_tooltip:true},item_model=\"moreworldevents:gui/parts/blocked_slot\"]"}

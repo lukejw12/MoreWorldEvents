@@ -1,0 +1,2 @@
+$execute unless predicate moreworldevents:chance/50_percent positioned ~ ~0.5 ~ rotated $(yaw) $(pitch) positioned ^ ^ ^$(radius) run particle minecraft:end_rod ~ ~ ~ 0 0 0 0 1 force
+$execute if predicate moreworldevents:chance/50_percent positioned ~ ~0.5 ~ rotated $(yaw) $(pitch) positioned ^ ^ ^$(radius) run particle minecraft:sculk_charge_pop ~ ~ ~ 0 0 0 0 1 force

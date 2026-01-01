@@ -87,3 +87,7 @@ scoreboard objectives add mwe.ff.active dummy
 scoreboard objectives add mwe.ff.gui dummy
 scoreboard objectives add mwe.ff.just_opened dummy
 scoreboard objectives add mwe.ff.tick dummy
+scoreboard players set #tolerance mwe.temp 150000
+scoreboard objectives add mwe.ff.particles dummy
+scoreboard objectives add mwe.ff.id dummy
+scoreboard objectives add mwe.ff.bounces dummy

@@ -9,3 +9,13 @@ execute if score #meteor_count mwe.temp matches 7.. run summon fireball ~ ~30 ~ 
 execute if score #meteor_count mwe.temp matches 8.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
 execute if score #meteor_count mwe.temp matches 9.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
 execute if score #meteor_count mwe.temp matches 10.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 11.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 12.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 13.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 14.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 15.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 16.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 17.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 18.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 19.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}
+execute if score #meteor_count mwe.temp matches 20.. run summon fireball ~ ~30 ~ {ExplosionPower:4b,Motion:[0.0,-0.09,0.0],Tags:["mwe.meteor","mwe.meteor_damage"]}

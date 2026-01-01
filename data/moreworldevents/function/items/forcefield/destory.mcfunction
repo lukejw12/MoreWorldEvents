@@ -1,3 +1,7 @@
+scoreboard players operation #kill_id mwe.temp = @s mwe.ff.id
+
+execute as @e[type=item_display,tag=mwe.forcefield_display] if score @s mwe.ff.id = #kill_id mwe.temp run kill @s
+
 execute if score @s mwe.ff.gui matches 1 at @e[type=item,nbt={Item:{id:"minecraft:barrel"},Age:0s},limit=1] run summon item ~ ~ ~ {Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:entity_data":{id:"minecraft:marker",Tags:["mwe.forcefield","mwe.recently_placed"]},"minecraft:item_model":"minecraft:beacon","minecraft:item_name":{"text":"Forcefield Generator","color":"light_purple","italic":false}}},Tags:["mwe.dropped_item"],Age:0s}
 execute unless score @s mwe.ff.gui matches 1 at @e[type=item,nbt={Item:{id:"minecraft:barrier"},Age:0s},limit=1] run summon item ~ ~ ~ {Item:{id:"minecraft:vex_spawn_egg",count:1,components:{"minecraft:entity_data":{id:"minecraft:marker",Tags:["mwe.forcefield","mwe.recently_placed"]},"minecraft:item_model":"minecraft:beacon","minecraft:item_name":{"text":"Forcefield Generator","color":"light_purple","italic":false}}},Tags:["mwe.dropped_item"],Age:0s}
 particle minecraft:smoke ~ ~ ~ 5 0 5 0 3000 force

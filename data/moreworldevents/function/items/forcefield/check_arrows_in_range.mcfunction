@@ -1,0 +1,1 @@
+$execute as @e[type=arrow,distance=3..$(max_range),nbt={inGround:0b}] unless entity @s[tag=mwe.bounced] unless entity @s[tag=mwe.ff.loop_escaped] run function moreworldevents:items/forcefield/test_arrow_collision

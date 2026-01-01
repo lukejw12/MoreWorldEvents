@@ -18,7 +18,6 @@ tag @e[tag=options,type=marker] remove token_event
 tag @e[tag=options,type=marker] remove acid_rain_event
 tag @e[tag=options,type=marker] remove bad_bed_event
 tag @e[tag=options,type=marker] remove pumpkin_head_event
-# REMOVE WEATHER FROM ACID RAIN 
 
 execute as @a at @s if score @s active_sleep matches 1.. run scoreboard players set @s active_sleep 0
 
@@ -70,7 +69,6 @@ playsound minecraft:entity.arrow.hit_player master @a ~ ~ ~ 1 0.1 1
 scoreboard players operation $event_timer random_event_timer = $event_timer random_event_timer_set
 scoreboard players operation $event_timer random_event_timer_minutes = $event_timer random_event_timer_minutes_set
 scoreboard players reset $sub_event current_event
-execute as @a[nbt={Inventory:[{id:"minecraft:carved_pumpkin",Slot:103b,components:{"minecraft:custom_data":{pumpkd:1b}}}]}] run item replace entity @s armor.head with air
 execute if score $randomize_pumpkin randomize matches 5 run tag @a add pumpkin_headc
 execute if score $randomize_pumpkin randomize matches 5 run tag @e[tag=options,type=marker] add pumpkin_head_event
 
