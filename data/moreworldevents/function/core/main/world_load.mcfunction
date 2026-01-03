@@ -28,6 +28,16 @@ scoreboard objectives add mined.deepslate_gold_ore minecraft.mined:minecraft.dee
 scoreboard objectives add mined.nether_gold_ore minecraft.mined:minecraft.nether_gold_ore
 scoreboard objectives add mined.ancient_debris minecraft.mined:minecraft.ancient_debris
 
+scoreboard objectives add mined.cobblestone minecraft.mined:minecraft.cobblestone
+scoreboard objectives add mined.cobbled_deepslate minecraft.mined:minecraft.cobbled_deepslate
+scoreboard objectives add mined.stone minecraft.mined:minecraft.stone
+scoreboard objectives add mined.deepslate minecraft.mined:minecraft.deepslate
+scoreboard objectives add mined.andesite minecraft.mined:minecraft.andesite
+scoreboard objectives add mined.diorite minecraft.mined:minecraft.diorite
+scoreboard objectives add mined.granite minecraft.mined:minecraft.granite
+scoreboard objectives add mined.tuff minecraft.mined:minecraft.granite
+scoreboard objectives add mwe.mined_stone dummy
+
 # Troll Events
 scoreboard objectives add mwe.slept_in_bed minecraft.custom:minecraft.sleep_in_bed
 scoreboard objectives add mwe.pump_random dummy

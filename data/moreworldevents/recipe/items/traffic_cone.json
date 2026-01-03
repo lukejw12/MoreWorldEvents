@@ -1,0 +1,79 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " C ",
+    "III",
+    "CTC"
+  ],
+  "key": {
+    "C": [
+      "minecraft:copper_ingot"
+    ],
+    "I": [
+      "minecraft:iron_ingot"
+    ],
+    "T": [
+      "minecraft:test_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:item_model": "moreworldevents:traffic_cone/traffic_cone",
+      "minecraft:equippable": {
+        "slot": "head"
+      },
+      "minecraft:item_name": {
+        "text": "Traffic Cone",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "This area is under",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "construction!",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "When Worn, Prevents:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " Floor Collapse",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": "",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "Can be placed in item frames",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "to protect a 15 block area",
+          "color": "dark_gray",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": "{mwe.traffic_cone:1b}",
+      "minecraft:rarity": "uncommon",
+      "!consumable": {}
+    },
+    "count": 2
+  }
+}

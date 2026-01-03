@@ -1,0 +1,64 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " T ",
+    "GIG",
+    "   "
+  ],
+  "key": {
+    "T": [
+      "minecraft:test_block"
+    ],
+    "G": [
+      "minecraft:tinted_glass"
+    ],
+    "I": [
+      "minecraft:iron_ingot"
+    ]
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:equippable": {
+        "slot": "head"
+      },
+      "minecraft:item_model": "moreworldevents:sunglasses/moon_shades",
+      "minecraft:item_name": {
+        "text": "Moon Shades",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Too cool for the",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "deadly moon",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "Shields Against:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " Lunar Reflections",
+          "color": "blue",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": "{mwe.moon_shades:1b}",
+      "minecraft:rarity": "uncommon",
+      "!consumable": {}
+    },
+    "count": 1
+  }
+}

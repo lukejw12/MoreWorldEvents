@@ -1,0 +1,65 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    " I ",
+    " S ",
+    " T "
+  ],
+  "key": {
+    "I": [
+      "minecraft:iron_ingot"
+    ],
+    "S": [
+      "minecraft:stick"
+    ],
+    "T": [
+      "minecraft:test_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:item_model": "moreworldevents:pumpkin_carver/pumpkin_carver",
+      "minecraft:item_name": {
+        "text": "Pumpkin Carver",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Removes cursed pumpkins",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "from your head",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "Right-Click: Carve yourself",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "Attack: Carve others",
+          "color": "gray",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": "{mwe.pumpkin_carver:1b}",
+      "minecraft:rarity": "uncommon",
+"minecraft:consumable": {
+        "consume_seconds": 9999.0,
+        "animation": "spyglass",
+        "sound": "minecraft:intentionally_empty"
+      }
+        },
+    "count": 1
+  }
+}

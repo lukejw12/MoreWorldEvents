@@ -1,1 +1,0 @@
-execute as @a[scores={rejoin=1..}] at @s run scoreboard players set @s rejoin 0

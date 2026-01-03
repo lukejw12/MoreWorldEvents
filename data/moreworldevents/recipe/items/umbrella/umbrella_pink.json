@@ -1,0 +1,89 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "pattern": [
+    "WEW",
+    " S ",
+    " S "
+  ],
+  "key": {
+    "W": [
+      "minecraft:pink_wool"
+    ],
+    "S": [
+      "minecraft:stick"
+    ],
+    "E": [
+      "minecraft:test_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:leather_horse_armor",
+    "components": {
+      "minecraft:item_model": "moreworldevents:umbrella/umbrella",
+      "minecraft:item_name": {
+        "text": "Pink Umbrella",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Does what a normal",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "umbrella does",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "Shields Against:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " Rain",
+          "color": "blue",
+          "italic": false
+        },
+        {
+          "text": " Solar Radiation",
+          "color": "blue",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": "{mwe.umbrella:1b}",
+      "minecraft:dyed_color": 15961002,
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:safe_fall_distance",
+          "id": "minecraft:umbrella_fall",
+          "amount": 1000,
+          "operation": "add_value",
+          "slot": "hand"
+        },
+        {
+            "type": "gravity",
+            "amount": -0.06,
+            "operation": "add_value",
+            "id": "minecraft:umbrella_fall",
+            "slot": "hand"
+        }
+      ],
+      "minecraft:rarity": "rare",
+      "tooltip_display": {
+        "hidden_components": [
+          "attribute_modifiers",
+          "dyed_color"
+        ]
+      },
+      "!equippable": {}
+    },
+    "count": 1
+  }
+}

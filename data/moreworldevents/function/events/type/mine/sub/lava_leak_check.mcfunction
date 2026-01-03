@@ -5,3 +5,4 @@ execute if items entity @s contents minecraft:deepslate run function moreworldev
 execute if items entity @s contents minecraft:andesite run function moreworldevents:events/type/mine/sub/spawn_lava
 execute if items entity @s contents minecraft:diorite run function moreworldevents:events/type/mine/sub/spawn_lava
 execute if items entity @s contents minecraft:granite run function moreworldevents:events/type/mine/sub/spawn_lava
+execute if items entity @s contents minecraft:tuff run function moreworldevents:events/type/mine/sub/spawn_lava

@@ -1,0 +1,2 @@
+$summon area_effect_cloud ~$(x) ~80 ~$(z) {Tags:["mwe.falling_star","mwe.new_star"],Duration:600,Radius:0f,Particle:{type:"block",block_state:{Name:"minecraft:air"}}}
+tag @e[type=area_effect_cloud,tag=mwe.new_star] remove mwe.new_star

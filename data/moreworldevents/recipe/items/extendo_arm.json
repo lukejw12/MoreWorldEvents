@@ -1,0 +1,84 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "SN ",
+    "NTN",
+    " NG"
+  ],
+  "key": {
+    "S": [
+      "minecraft:shears"
+    ],
+    "N": [
+      "minecraft:iron_nugget"
+    ],
+    "T": [
+      "minecraft:test_block"
+    ],
+    "G": [
+      "minecraft:gold_ingot"
+    ]
+  },
+  "result": {
+    "id": "minecraft:stone",
+    "components": {
+      "minecraft:item_model": "moreworldevents:extendo_arm/extendo_arm",
+      "minecraft:item_name": {
+        "text": "Extendo Arm",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "For when you can't quite",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "reach the nooks and crannies",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "When in Offhand:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": "+3 Reach",
+          "color": "blue",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": "{mwe.extendo_arm:1b}",
+      "minecraft:attribute_modifiers": [
+        {
+          "type": "minecraft:block_interaction_range",
+          "id": "minecraft:extendo_arm_block",
+          "amount": 3.0,
+          "operation": "add_value",
+          "slot": "offhand"
+        },
+        {
+          "type": "minecraft:entity_interaction_range",
+          "id": "minecraft:extendo_arm_entity",
+          "amount": 3.0,
+          "operation": "add_value",
+          "slot": "offhand"
+        }
+      ],
+      "minecraft:rarity": "rare",
+      "tooltip_display": {
+        "hidden_components": [
+          "attribute_modifiers"
+        ]
+      }
+    },
+    "count": 1
+  }
+}

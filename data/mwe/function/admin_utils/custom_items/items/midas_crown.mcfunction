@@ -1,3 +1,0 @@
-tellraw @s [{"text":"Item Recieved","color":"green"}]
-give @s golden_helmet[custom_data={midas_crown:1b},enchantment_glint_override=true,item_name='{"color":"light_purple","italic":false,"text":"Midas Crown"}',lore=['{"color":"gray","italic":false,"text":"Grants Immunity to Midas,"}','{"color":"gray","italic":false,"text":"Collapse, and Lava floor events."}'],rarity="epic"] 1
-playsound minecraft:block.note_block.bit master @s ~ ~ ~ 100 1 1

@@ -1,0 +1,70 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "GNG",
+    "TDT",
+    "CCC"
+  ],
+  "key": {
+    "G": [
+      "minecraft:gold_ingot"
+    ],
+    "N": [
+      "minecraft:gold_nugget"
+    ],
+    "T": [
+      "minecraft:test_block"
+    ],
+    "D": [
+      "minecraft:diamond"
+    ],
+    "C": [
+      "minecraft:structure_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:poisonous_potato",
+    "components": {
+      "minecraft:item_model": "moreworldevents:midas_crown/midas_crown",
+      "minecraft:equippable": {
+        "slot": "head"
+      },
+      "minecraft:item_name": {
+        "text": "Midas Crown",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Reverses the curse",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "of golden touch",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "Prevents:",
+          "color": "gray",
+          "italic": false
+        },
+        {
+          "text": " Midas Touch",
+          "color": "blue",
+          "italic": false
+        }
+      ],
+      "minecraft:custom_data": "{mwe.midas_crown:1b}",
+      "minecraft:rarity": "epic",
+      "!consumable": {}
+    },
+    "count": 1
+  }
+}

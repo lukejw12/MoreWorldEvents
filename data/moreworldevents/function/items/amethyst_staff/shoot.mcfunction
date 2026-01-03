@@ -13,7 +13,7 @@ execute if data storage mwe:staff {mode:"grow"} run function moreworldevents:ite
 execute if data storage mwe:staff {mode:"shrink"} run function moreworldevents:items/amethyst_staff/update_lore_shrink with storage mwe:staff
 
 tag @s add mwe.ray_shooter
-execute anchored eyes positioned ^ ^ ^0.5 run function moreworldevents:items/amethyst_staff/raycast/start
+execute anchored eyes positioned ^ ^ ^1 run function moreworldevents:items/amethyst_staff/raycast/start
 tag @s remove mwe.ray_shooter
 
 playsound minecraft:block.amethyst_block.resonate player @a ~ ~ ~ 1 2

@@ -1,1 +1,0 @@
-execute if score #hit growth_ray matches 0 positioned ~-0.9 ~-0.9 ~-0.9 if entity @s[dx=0] positioned ~0.95 ~0.95 ~0.95 run function mwe:growth_hit_entity

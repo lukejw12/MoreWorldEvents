@@ -1,0 +1,20 @@
+{
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:using_item",
+      "conditions": {
+        "item": {
+          "items": "minecraft:poisonous_potato",
+          "predicates": {
+            "custom_data": {
+              "mwe.pumpkin_carver": 1
+            }
+          }
+        }
+      }
+    }
+  },
+  "rewards": {
+    "function": "moreworldevents:items/pumpkin_carver/carve_self"
+  }
+}

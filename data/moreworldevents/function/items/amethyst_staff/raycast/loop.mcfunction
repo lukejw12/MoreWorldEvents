@@ -1,6 +1,6 @@
 particle minecraft:cherry_leaves ~ ~ ~ 0 0 0 0 1 force
 
-execute as @e[type=!#moreworldevents:non_living,distance=..1.5,limit=1,sort=nearest] at @s run return run function moreworldevents:items/amethyst_staff/raycast/hit_entity
+execute as @e[type=!#moreworldevents:non_living,distance=..1.2,limit=1,sort=nearest] at @s run return run function moreworldevents:items/amethyst_staff/raycast/hit_entity
 
 execute if block ~ ~ ~ #moreworldevents:glass run return run function moreworldevents:items/amethyst_staff/raycast/hit_glass
 

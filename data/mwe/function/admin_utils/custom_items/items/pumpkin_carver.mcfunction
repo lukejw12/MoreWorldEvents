@@ -1,3 +1,0 @@
-tellraw @s [{"text":"Item Recieved","color":"green"}]
-give @s repeating_command_block[consumable={consume_seconds:9999.0f,animation:"toot_horn",has_consume_particles:false},custom_data={pumpkin_carve:1b},enchantment_glint_override=true,food={nutrition:1,saturation:1.0f,can_always_eat:true},item_model="minecraft:iron_sword",item_name='{"color":"aqua","italic":false,"text":"Pumpkin Carver"}',lore=['{"color":"gray","italic":false,"text":"Hold Right-Click to carve the pumpkin right off your head!"}'],max_stack_size=1,rarity="rare"] 1
-playsound minecraft:block.note_block.bit master @s ~ ~ ~ 100 1 1

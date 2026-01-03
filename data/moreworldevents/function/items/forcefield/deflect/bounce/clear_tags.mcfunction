@@ -1,0 +1,1 @@
+tag @e[type=#moreworldevents:reflectable_projectiles,tag=mwe.bounced] remove mwe.bounced

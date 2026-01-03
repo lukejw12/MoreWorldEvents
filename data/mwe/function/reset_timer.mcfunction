@@ -1,2 +1,0 @@
-scoreboard players operation $event_timer random_event_timer = $event_timer random_event_timer_set
-scoreboard players operation $event_timer random_event_timer_minutes = $event_timer random_event_timer_minutes_set

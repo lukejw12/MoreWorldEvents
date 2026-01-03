@@ -1,0 +1,1 @@
+$execute as @e[type=#moreworldevents:reflectable_projectiles,distance=3..$(max_range)] unless data entity @s {inGround:1b} unless entity @s[tag=mwe.bounced] unless entity @s[tag=mwe.ff.loop_escaped] run function moreworldevents:items/forcefield/deflect/math/test_collision

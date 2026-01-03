@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "121",
+    "134",
+    "151"
+  ],
+  "key": {
+    "1": ["minecraft:cobbled_deepslate"],
+    "2": ["minecraft:nether_star"],
+    "3": ["minecraft:sculk_shrieker"],
+    "4": ["minecraft:observer"],
+    "5": ["minecraft:redstone_block"]
+  },
+  "result": {
+    "id": "minecraft:vex_spawn_egg",
+    "components": {
+      "minecraft:item_model": "moreworldevents:block/forcefield_generator",
+      "minecraft:item_name": {"text":"Forcefield Generator","italic":false},
+      "lore": [
+        {"text":"Creates a forcefield to","italic":false,"color":"dark_gray"},
+        {"text":"shield against projectiles","italic":false,"color":"dark_gray"}
+    ],
+      "minecraft:entity_data": "{id:\"minecraft:marker\",Tags:[\"mwe.forcefield\",\"mwe.recently_placed\"]}",
+      "rarity": "epic"
+    },
+    "count": 1
+  }
+}

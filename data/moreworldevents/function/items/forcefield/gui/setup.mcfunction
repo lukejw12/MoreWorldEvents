@@ -37,6 +37,4 @@ item replace block ~ ~ ~ container.15 with minecraft:lime_concrete[item_model="m
 
 item replace block ~ ~ ~ container.16 with minecraft:red_concrete[item_model="moreworldevents:gui/buttons/down",minecraft:item_name={"text":"[-] Decrease Range","color":"red","italic":false},minecraft:lore=[{"text":"Click to reduce protection","color":"gray","italic":false},{"text":"Decreases fuel consumption","color":"dark_gray","italic":false}],minecraft:custom_data={mwe.gui_item:1b,mwe.decrease_range:1b}]
 
-function moreworldevents:items/forcefield/gui/update_status
-
-playsound minecraft:block.barrel.open block @a ~ ~ ~ 0.5 1
+function moreworldevents:items/forcefield/gui/status/update

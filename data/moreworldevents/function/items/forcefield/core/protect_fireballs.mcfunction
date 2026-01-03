@@ -1,0 +1,8 @@
+execute positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 5 as @e[type=fireball,distance=..5] at @s run function moreworldevents:items/forcefield/particles/impact/fireball_hit {radius:5}
+execute positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 10 as @e[type=fireball,distance=..10] at @s run function moreworldevents:items/forcefield/particles/impact/fireball_hit {radius:10}
+execute positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 15 as @e[type=fireball,distance=..15] at @s run function moreworldevents:items/forcefield/particles/impact/fireball_hit {radius:15}
+execute positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 20 as @e[type=fireball,distance=..20] at @s run function moreworldevents:items/forcefield/particles/impact/fireball_hit {radius:20}
+execute positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 25 as @e[type=fireball,distance=..25] at @s run function moreworldevents:items/forcefield/particles/impact/fireball_hit {radius:25}
+execute positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 30 as @e[type=fireball,distance=..30] at @s run function moreworldevents:items/forcefield/particles/impact/fireball_hit {radius:30}
+execute positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 35 as @e[type=fireball,distance=..35] at @s run function moreworldevents:items/forcefield/particles/impact/fireball_hit {radius:35}
+execute positioned ~ ~0.5 ~ if score @s mwe.ff.radius matches 40 as @e[type=fireball,distance=..40] at @s run function moreworldevents:items/forcefield/particles/impact/fireball_hit {radius:40}

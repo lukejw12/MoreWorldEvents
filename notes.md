@@ -1,22 +1,25 @@
 # Items
-- [ ] Amethyst Staff
-- [ ] Forcefield Generator
+- [x] Amethyst Staff
+- [x] Forcefield Generator
+- [x] Umbrella
+- [x] Traffic Cones
+- [x] Moon Shades
 # Events
-- [x] Token Frenzy
-- [x] Size Events
-- [x] Solar Sun
-- [x] Deadly Moon
-- [x] Midas Touch
-- [x] Floor is Lava
-- [x] Acid Rain
-- [x] Acidic water 
-- [x] Very Hot Lava
-- [x] Explosive Beds
-- [x] Weak Floors
-- [x] Meteors
-- [x] Pumpkin Head
+- [x] Token Frenzy [Wont Counter]
+- [x] Size Events [Amethyst Staff]
+- [x] Solar Sun [Umbrella]
+- [x] Deadly Moon [Moon Shades]
+- [x] Floor is Lava [Frost walker boots]
+- [x] Acid Rain [Umbrella]
+- [x] Acidic water [Wont Counter]
+- [x] Very Hot Lava [Wont Counter]
+- [x] Weak Floors [Traffic Cones]
+- [x] Meteor [Forcefield]
+- [x] Midas Touch [Midas Crown]
+- [x] Explosive Beds [Wont Counter]
+- [x] Pumpkin Head [Pumpkin Carver]
 - [x] Mining Events
-- [x] Reach Events
+- [x] Reach Events [Extendo Arm]
 - [x] Gravity Events
 
 # General To-Do

@@ -1,1 +1,1 @@
-function moreworldevents:items/forcefield/gui/check_buttons
+function moreworldevents:items/forcefield/gui/buttons/check_all

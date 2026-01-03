@@ -1,3 +1,0 @@
-tellraw @s [{"text":"Item Recieved","color":"green"}]
-give @p repeating_command_block[consumable={consume_seconds:9999.0f,animation:"brush",has_consume_particles:false},custom_data={reroll:1b},enchantment_glint_override=true,food={nutrition:1,saturation:1.0f,can_always_eat:true},item_model="minecraft:compass",item_name='{"color":"aqua","italic":false,"text":"Event Shuffler"}',lore=['{"color":"gray","italic":false,"text":"Use to reroll the current event! (GLOBAL)"}'],max_stack_size=8,rarity="rare"] 1
-playsound minecraft:block.note_block.bit master @s ~ ~ ~ 100 1 1

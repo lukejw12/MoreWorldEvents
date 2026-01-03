@@ -1,1 +1,0 @@
-tag @e[type=arrow,tag=mwe.bounced] remove mwe.bounced

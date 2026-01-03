@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "RGR",
+    "GRR",
+    "GRG"
+  ],
+  "key": {
+    "R": [
+      "minecraft:raw_gold_block"
+    ],
+    "G": [
+      "minecraft:gold_block"
+    ]
+  },
+  "result": {
+    "id": "minecraft:structure_block",
+    "components": {
+      "minecraft:item_model": "moreworldevents:midas_crown/dense_gold_chunk",
+      "minecraft:item_name": {
+        "text": "Dense Gold Chunk",
+        "italic": false
+      },
+      "minecraft:lore": [
+        {
+          "text": "Incredibly heavy",
+          "color": "dark_gray",
+          "italic": false
+        },
+        {
+          "text": "gold concentrate",
+          "color": "dark_gray",
+          "italic": false
+        }
+      ],
+      "minecraft:rarity": "uncommon"
+    },
+    "count": 1
+  }
+}
