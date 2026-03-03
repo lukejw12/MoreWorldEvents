@@ -1,7 +1,7 @@
 execute store result score #charges mwe.temp run data get entity @s SelectedItem.components."minecraft:custom_data".charges
 
-#ADD SOUND
-execute if score #charges mwe.temp matches ..0 run title @s actionbar {"text":"No charges! Charge with Amethyst Core","color":"red"}
+execute if score #charges mwe.temp matches ..0 run title @s title ""
+execute if score #charges mwe.temp matches ..0 run title @s subtitle {"text":"No Charges!","color":"#4404f9","shadow_color":0}
 execute if score #charges mwe.temp matches ..0 run return fail
 
 scoreboard players remove #charges mwe.temp 1

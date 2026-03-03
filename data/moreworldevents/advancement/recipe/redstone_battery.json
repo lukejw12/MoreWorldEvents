@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_wool": {
+        "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "copper_ingot"
+          }
+        ]
+      }
+    }
+},
+  "rewards": {
+    "recipes": [
+      "moreworldevents:items/redstone_battery"
+    ]
+  }
+}

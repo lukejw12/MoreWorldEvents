@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_wool": {
+        "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "gold_block"
+          }
+        ]
+      }
+    }
+},
+  "rewards": {
+    "recipes": [
+      "moreworldevents:items/dense_gold_chunk"
+    ]
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_wool": {
+        "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "amethyst_shard"
+          }
+        ]
+      }
+    }
+},
+  "rewards": {
+    "recipes": [
+      "moreworldevents:items/amethyst_staff"
+    ]
+  }
+}

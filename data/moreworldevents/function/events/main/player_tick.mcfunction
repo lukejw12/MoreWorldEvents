@@ -1,5 +1,7 @@
 execute as @s[scores={mwe.admin.trigger=1..}] run function moreworldevents:admin/settings/handle_trigger
+execute as @s[scores={mwe.credits.trigger=1..}] run function moreworldevents:credits/handle_trigger
 scoreboard players enable @s[tag=!mwe.survival] mwe.admin.trigger
+scoreboard players enable @s mwe.credits.trigger
 execute as @s[scores={mwe.staff.cooldown=1..}] run scoreboard players remove @s mwe.staff.cooldown 1
 tag @s[gamemode=survival] add mwe.survival
 tag @s[gamemode=adventure] add mwe.survival
@@ -10,7 +12,6 @@ execute as @s[scores={mwe.token.difficulty=1..}] run function moreworldevents:ev
 execute as @s[scores={mwe.task=1..}] run function moreworldevents:events/token_trials/trigger/check_task
 execute as @e[type=marker,tag=mwe.forcefield] at @s run function moreworldevents:items/forcefield/core/tick
 clear @s *[minecraft:custom_data~{mwe.gui_item:1b}]
-function moreworldevents:core/sub/recipe/recipes
 
 
 

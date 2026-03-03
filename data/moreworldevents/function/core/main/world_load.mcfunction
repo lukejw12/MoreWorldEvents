@@ -5,6 +5,7 @@ execute unless entity @e[tag=mwe.options] run summon marker 0 -64 0 {Tags:["mwe.
 forceload add -1 -1 1 1
 # Admin Menu
 scoreboard objectives add mwe.admin.trigger trigger
+scoreboard objectives add mwe.credits.trigger trigger Credits
 
 ## Events
 scoreboard objectives add mwe.event_timer dummy
@@ -101,3 +102,15 @@ scoreboard players set #tolerance mwe.temp 150000
 scoreboard objectives add mwe.ff.particles dummy
 scoreboard objectives add mwe.ff.id dummy
 scoreboard objectives add mwe.ff.bounces dummy
+tellraw @a {"text":"--------------------------------",color:gold}
+tellraw @a {"text":"Welcome to More World Events!",color:yellow}
+tellraw @a {"text":"Use '/function moreworldevents:admin/admin_menu'",color:yellow}
+tellraw @a {"text":"to trigger the admin menu!",color:yellow}
+tellraw @a {"text":"",color:yellow}
+tellraw @a {"text":"Make sure to leave feedback in the",color:gold}
+tellraw @a {"text":"Discord!",color:blue,"underlined":true,click_event:{action:"open_url",url:"https://discord.gg/YxRWAPUtDt"}}
+tellraw @a {"text":"",color:gold}
+tellraw @a {"text":"To uninstall the pack run",color:yellow}
+tellraw @a {"text":"'/function moreworldevents:admin/dangerous/uninstall',",color:yellow}
+tellraw @a {"text":"then remove the pack from the datapacks folder.",color:yellow}
+tellraw @a {"text":"--------------------------------",color:gold}

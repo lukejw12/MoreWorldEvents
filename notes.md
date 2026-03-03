@@ -4,6 +4,9 @@
 - [x] Umbrella
 - [x] Traffic Cones
 - [x] Moon Shades
+- [x] Midas Crown
+- [x] Pumpkin Carver
+- [x] Extendo Arm
 # Events
 - [x] Token Frenzy [Wont Counter]
 - [x] Size Events [Amethyst Staff]
@@ -25,12 +28,12 @@
 # General To-Do
 - [x] Add Death messages for meteor, floor, troll, and sky events
 - [x] Add Admin Menu
-- [ ] Add Counter Items to counteract effects from events
+- [x] Add Counter Items to counteract effects from events
 - [x] Add Rejoin Event, Apply tags and whatnot to players who rejoin
 - [ ] Stop Procrastinating
-- [ ] Add recipes for event tokens
-- [ ] Update event token item to use texture
-- [ ] Finish Counter Items
+- [x] Add recipes for event tokens
+- [x] Update event token item to use texture
+- [x] Finish Counter Items
 
 # Challenges
 ## NORMAL Challenges (1 token)
@@ -71,3 +74,4 @@
 
 minecraft:test_block is placeholder
 #ADD SOUND is pllaceholder
+

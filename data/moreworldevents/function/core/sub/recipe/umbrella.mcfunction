@@ -14,13 +14,3 @@ recipe give @s moreworldevents:items/umbrella/umbrella_brown
 recipe give @s moreworldevents:items/umbrella/umbrella_green
 recipe give @s moreworldevents:items/umbrella/umbrella_red
 recipe give @s moreworldevents:items/umbrella/umbrella_black
-recipe give @s moreworldevents:items/amethyst_core
-recipe give @s moreworldevents:items/amethyst_staff
-recipe give @s moreworldevents:items/forcefield_generator
-recipe give @s moreworldevents:items/redstone_battery
-recipe give @s moreworldevents:items/moon_shades
-recipe give @s moreworldevents:items/traffic_cone
-recipe give @s moreworldevents:items/pumpkin_carver
-recipe give @s moreworldevents:items/extendo_arm
-recipe give @s moreworldevents:items/dense_gold_chunk
-recipe give @s moreworldevents:items/midas_crown

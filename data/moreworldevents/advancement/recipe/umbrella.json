@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_wool": {
+        "trigger": "inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "#minecraft:wool"
+          }
+        ]
+      }
+    }
+},
+  "rewards": {
+    "function": "moreworldevents:core/sub/recipe/umbrella"
+  }
+}
